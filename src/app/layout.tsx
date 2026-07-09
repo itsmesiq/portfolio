@@ -10,7 +10,7 @@ const lexend = Lexend({
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
-  weight: ["400", "500", "600", "700"],
+  weight: ["300","400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
