@@ -59,9 +59,9 @@ const techStack = [
     },
 ];
 
-export const Hero = () => {
+export default function Hero() {
     return (
-        <section className="w-full font-sans text-sm text-text-gray-200 px-16 bg-[url('/img/hero/background.jpg')] bg-cover bg-bottom bg-no-repeat">
+        <section className="w-full font-sans text-sm text-text-gray-200 px-16 bg-[url('/img/hero/background.jpg')] bg-cover bg-position-[center_bottom_-1rem] bg-no-repeat ">
             <div className="w-full flex items-center justify-between py-6">
                 <Button href="/cv/curriculoAnaSiqueira.pdf">
                     Baixar Currículo
