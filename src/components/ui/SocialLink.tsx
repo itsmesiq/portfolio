@@ -8,7 +8,7 @@ type SocialLinkProp = {
 export default function SocialLink({ social }: SocialLinkProp) {
     return (
         <a href={social.href} target="_blank" rel="noopener noreferrer">
-            <div className="w-full md:min-w-90 flex items-center justify-between py-5 px-5 bg-surface-gray rounded-lg hover:bg-surface-hover transition-colors duration-300">
+            <div className="w-full min-w-80 md:min-w-90 flex items-center justify-between py-5 px-5 bg-surface-gray rounded-lg hover:bg-surface-hover transition-colors duration-300">
                 <div className="flex gap-3 items-center">
                     <Image
                         src={social.image}
