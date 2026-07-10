@@ -73,7 +73,7 @@ export default function Hero() {
                     />
                 </Button>
                 <div className="flex items-center gap-6">
-                    <span className="hidden sm:visible">Conecte-se comigo!</span>
+                    <span className="hidden sm:inline">Conecte-se comigo!</span>
                     <ul className="flex items-center justify-center gap-4">
                         {socialMedia.map((item, index) => (
                             <li key={index} className="flex items-center justify-center">
