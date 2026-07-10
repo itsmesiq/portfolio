@@ -95,7 +95,7 @@ export default function Hero() {
                     </ul>
                 </div>
             </div>
-            <div className="flex flex-col gap-8 mt-8 lg:max-w-[1560px] items-center">
+            <div className="flex flex-col gap-8 mt-8 lg:max-w-[1560px] items-center mx-auto">
                 <Image
                     src="/img/hero/profile.png"
                     alt="Profile Image"
