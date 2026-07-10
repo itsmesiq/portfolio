@@ -95,7 +95,7 @@ export default function Hero() {
                     </ul>
                 </div>
             </div>
-            <div className="flex flex-col gap-8 mt-8 lg:px-16 items-center">
+            <div className="flex flex-col gap-8 mt-8 lg:max-w-[1560px] items-center">
                 <Image
                     src="/img/hero/profile.png"
                     alt="Profile Image"
@@ -108,7 +108,7 @@ export default function Hero() {
                     <h1 className="font-heading text-3xl lg:text-5xl leading-[normal] text-foreground font-bold">UI Designer & Frontend Developer</h1>
                     <p className="text-base lg:text-xl font-light max-w-270 mt-3">Crio interfaces digitais de alta performance para e-commerce, combinando design estratégico, responsividade e foco em conversão. Habilidade em Frontend para garantir uma implementação fiel ao projeto.</p>
                 </div>
-                <ul className="flex gap-4 items-center justify-center pt-4 pb-12 flex-wrap">
+                <ul className="flex gap-4 items-center justify-center my-4 flex-wrap">
                     {techStack.map((item, index) => (
                         <li key={index} className="flex items-center gap-2 px-4 py-2 bg-surface-gray rounded-4xl font-sans text-text-gray-200 text-sm sm:text-base leading-5 font-normal text-center">
                             <Image
@@ -124,7 +124,7 @@ export default function Hero() {
                 </ul>
 
             </div>
-            <div className="flex justify-center px-16 pb-10 md:py-14">
+            <div className="flex justify-center px-16 mb-10 md:my-14">
                 <Image
                     src="/img/hero/hero-icons/doubledown.svg"
                     alt="Arrow Down Icon"
