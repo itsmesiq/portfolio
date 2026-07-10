@@ -19,7 +19,7 @@ export const cases: Project[] = [
             title: 'Design System e Handoff',
             content: 'Criação de componentes reutilizáveis utilizando Auto Layout e Variants no Figma, garantindo consistência visual, escalabilidade e maior agilidade durante a evolução do projeto. Toda a interface foi estruturada com foco em componentização, responsividade e organização, facilitando o handoff e a implementação pela equipe de Front-end.'
         },
-        image: '/img/cases/coach.png'
+        image: '/img/cases/coachfull.png'
     },
     {
         tags: ['UX/UI Design', 'E-commerce', 'Checkout', 'Conversão'],
@@ -34,7 +34,7 @@ export const cases: Project[] = [
         contribution: ['UI Design', 'Design Responsivo (Desktop e Mobile)', 'Otimização da Jornada de Compra', 'Prototipação de Interfaces', 'Design de Novas Funcionalidades', 'Colaboração com o time de desenvolvimento'],
         text: 'Desenvolvimento de uma nova experiência para o checkout e evolução de funcionalidades estratégicas do e-commerce, incluindo:',
         scope: ['Fluxo completo de checkout, do carrinho à confirmação do pedido', 'Processo de checkout simplificado', 'Cadastro rápido de clientes', 'Carrinho multiseller com agrupamento por entrega', 'Minicart e carrinho com vitrines de Cross Sell', 'Modal de produto adicionado ao carrinho com compra rápida (Compre o Look)', 'Funcionalidade para presentes, incluindo mensagem personalizada e opção de embalagem', 'Aviso automático de alteração de preço para produtos no carrinho', 'Reformulação da seleção de variações (cor e tamanho) na página de produto', 'Nova experiência para produtos esgotados, com sugestões de itens similares e opção Avise-me', 'Reformulação das avaliações de produtos, incluindo fotos, indicadores visuais e filtros de navegação', 'Lightbox promocional para captura de leads com oferta de cupom de desconto'],
-        image: '/img/cases/shop2gether.png'
+        image: '/img/cases/shop2getherfull.png'
     },
     {
         tags: ['UX/UI Design', 'E-Commerce', 'Wake'],
@@ -49,6 +49,6 @@ export const cases: Project[] = [
         contribution: ['UI Design', 'Design Responsivo (Desktop e Mobile)', 'Design System', 'Prototipação de Interfaces', 'Arquitetura da Experiência', 'Colaboração com o time de desenvolvimento'],
         text: 'Desenvolvimento completo da interface do e-commerce, contemplando toda a jornada de compra e funcionalidades estratégicas da plataforma:',
         scope: ['Home', 'Página de Categoria (PLP)', 'Três versões da Página de Produto (PDP)', 'Funcionalidades de Compre Junto, Compre o Look e Compra Rápida', 'Área do Cliente (login, cadastro, pedidos, wishlist e demais funcionalidades)', 'Fluxo completo de Checkout, do carrinho à confirmação do pedido', 'Carrinho organizado por categorias de produtos para facilitar a visualização dos envios', 'Página institucional com programação dos eventos, organizada por dias, temas e palestrantes'],
-        image: '/img/cases/wake.png'
+        image: '/img/cases/wakefull.png'
     },
 ];

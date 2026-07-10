@@ -11,7 +11,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
     const isEven = index % 2 === 0;
 
     return (
-        <div className={`w-full flex items-center gap-22 py-20 justify-between font-sans text-sm font-light text-foreground ${ isEven ? "flex-row pl-16 2xl:pl-50" : "flex-row-reverse pr-16 2xl:pr-64" }`}>
+        <div className={`w-full flex items-center gap-22 py-20 px-16 justify-between lg:justify-center font-sans text-sm font-light text-foreground ${ isEven ? "flex-row" : "flex-row-reverse" }`}>
             <div className="flex flex-col gap-5 max-w-lg 2xl:max-w-2xl">
                 <div className="project-heading">
                     <div className="flex item justify-start gap-4 mb-4">
