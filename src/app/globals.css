@@ -19,6 +19,8 @@
   
   --font-sans: var(--font-space-grotesk);
   --font-heading: var(--font-lexend);
+
+  --breakpoint-1720: 107.5rem;
 }
 
 body {
