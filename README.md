@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+Meu portfólio desenvolvido com Next.js, React e Tailwind CSS para apresentar projetos de UI Design e Frontend Development.
 
-First, run the development server:
+![Preview do projeto](./public/preview.jpg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Sobre
+
+Este projeto foi desenvolvido com foco em performance, acessibilidade e responsividade, reunindo alguns dos principais projetos da minha atuação como UI Designer e Frontend Developer.
+
+O objetivo é apresentar estudos de caso completos, mostrando desde o processo de design até a implementação das interfaces.
+
+## 💡 O que foi praticado
+
+- Componentização
+- Organização de dados com TypeScript
+- Responsividade Mobile First
+- Motion para animações
+- SEO com Metadata API
+- Otimização de imagens
+- Estrutura escalável de componentes
+
+## 🚀 Tecnologias
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Motion
+- ESLint
+
+## 📂 Estrutura
+
+```text
+src
+├── app
+├── components
+├── data
+├── types
+└── public
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📱 Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Layout totalmente responsivo
+- Animações com Motion
+- SEO otimizado
+- Componentização com React
+- Otimização de imagens com Next.js
+- Cases organizados por estrutura de dados
+- Performance otimizada
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📸 Projetos apresentados
 
-## Learn More
+- Coach Brasil
+- Shop2Gether
+- Wake
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Todo o layout foi desenvolvido no Figma antes da implementação em código.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👋 Contato
 
-## Deploy on Vercel
+LinkedIn: https://www.linkedin.com/in/ana-siqueira-247940125/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GitHub: https://github.com/itsmesiq
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Email: anasiqueira.serpentis@gmail.com
+
+
+## ⚙️ Como executar
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/itsmesiq/portfolio.git
+```
+
+Entre na pasta:
+
+```bash
+cd portfolio
+```
+
+Instale as dependências:
+
+```bash
+pnpm install
+```
+
+Execute o projeto:
+
+```bash
+pnpm dev
+```
+
+Abra:
+
+```
+http://localhost:3000
+```
+
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para fins de portfólio.
