@@ -9,7 +9,7 @@ export const socialMedia: Social[] = [
     {
         label: 'Linkedin',
         image: '/img/icon/linkedin.svg',
-        href: 'https://www.linkedin.com/in/ana-siqueira-247940125/',
+        href: 'https://www.linkedin.com/in/itsmesiq/',
     },
     {
         label: 'Github',
