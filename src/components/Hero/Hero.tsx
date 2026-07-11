@@ -1,28 +1,6 @@
 import Button from "@/components/ui/Button";
 import Image from "next/image";
-
-const socialMedia = [
-    {
-        label: 'Whatsapp',
-        image: '/img/icon/whatsapp.svg',
-        href: 'https://wa.me/5522981393078',
-    },
-    {
-        label: 'Linkedin',
-        image: '/img/icon/linkedin.svg',
-        href: 'https://www.linkedin.com/in/ana-siqueira-247940125/',
-    },
-    {
-        label: 'Github',
-        image: '/img/icon/github.svg',
-        href: 'https://github.com/itsmesiq',
-    },
-    {
-        label: 'Email',
-        image: '/img/icon/email.svg',
-        href: 'mailto:anasiqueira.serpentis@gmail.com',
-    },
-];
+import { socialMedia } from "@/data/social";
 
 const techStack = [
     {
@@ -76,7 +54,7 @@ export default function Hero() {
                     <span className="hidden sm:inline">Conecte-se comigo!</span>
                     <ul className="flex items-center justify-center gap-4">
                         {socialMedia.map((item, index) => (
-                            <li key={index} className="flex items-center justify-center">
+                            <li key={index} className="flex items-center justify-center hover:scale-130 transition-transform duration-300">
                                 <a
                                     href={item.href}
                                     target="_blank"
