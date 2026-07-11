@@ -1,6 +1,7 @@
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 import { socialMedia } from "@/data/social";
+import * as motion from "motion/react-client";
 
 const techStack = [
     {
@@ -102,14 +103,25 @@ export default function Hero() {
                 </ul>
 
             </div>
-            <div className="flex justify-center px-16 mb-10 md:my-14">
+            <motion.div 
+                className="flex justify-center px-16 mb-10 md:my-14"
+                animate={{
+                    y: [0,6,0],
+                    opacity: [1,0.8,1]
+                }}
+                transition={{
+                    duration: 2.4,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                }}
+                >
                 <Image
                     src="/img/hero/hero-icons/doubledown.svg"
                     alt="Arrow Down Icon"
                     width={56}
                     height={56}
                 />
-            </div>
+            </motion.div>
         </section>
     );
 };
