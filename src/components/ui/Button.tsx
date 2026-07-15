@@ -8,7 +8,7 @@ export default function Button({href, children}: ButtonProps) {
         <a
             href={href}
             download
-            className="inline-flex items-center gap-3 rounded-lg px-5 py-3 border border-text-gray-200 font-sans text-sm md:text-base font-medium text-text-gray-200 hover:bg-surface-hover transition-colors duration-300"
+            className="inline-flex items-center gap-3 rounded-lg px-4 py-2 font-sans text-sm md:text-base font-medium text-primary-foreground bg-primary hover:bg-primary-hover transition-colors duration-300"
         >
             {children}
         </a>
