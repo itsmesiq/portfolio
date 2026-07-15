@@ -33,17 +33,17 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --muted: var(--muted);
-  --card: var(--card);
-  --surface: var(--surface);
-  --surface-foreground: var(--surface-foreground);
-  --surface-hover: var(--surface-hover);
-  --border: var(--border);
-  --primary: var(--primary);
-  --primary-foreground: var(--primary-foreground);
-  --primary-hover: var(--primary-hover);
-  --secondary-hover: var(--secondary-hover);
-  
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary-hover: var(--secondary-hover);
+
   --font-sans: var(--font-space-grotesk);
   --font-heading: var(--font-lexend);
 
