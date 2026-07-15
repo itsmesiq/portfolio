@@ -1,21 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #101021;
-  --foreground: #EFF3FF;
-  --surface-gray: #292C34;
+  --background: #F1F1F1;
+  --foreground: #000109;
+  --card: #FFF;
+  --muted: #292C34;
+  --surface: #C0C4CE;
+  --surface-foreground: #000109;
   --surface-hover: #3C4253;
-  --text-gray-200: #C0C4CE;
-  --light-blue: #0BF7FE;
+  --border: #000109;
+  --primary: #FEB600;
+  --primary-foreground: #000109;
+  --primary-hover: #FEE400;
+  --secondary-hover: rgba(0, 1, 9, 0.15);
+}
+
+.dark {
+  --background: #000109;
+  --foreground: #FFF;
+  --muted: #C0C4CE;
+  --card: #101021;
+  --surface: #292C34;
+  --surface-foreground: #FFF;
+  --surface-hover: #3C4253;
+  --border: #FFF;
+  --primary: #FEB600;
+  --primary-foreground: #000109;
+  --primary-hover: #FEE400;
+  --secondary-hover: rgba(255, 255, 255, 0.15);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-surface-gray: var(--surface-gray);
-  --color-surface-hover: var(--surface-hover);
-  --color-text-gray-200: var(--text-gray-200);
-  --color-light-blue: var(--light-blue);
+  --muted: var(--muted);
+  --card: var(--card);
+  --surface: var(--surface);
+  --surface-foreground: var(--surface-foreground);
+  --surface-hover: var(--surface-hover);
+  --border: var(--border);
+  --primary: var(--primary);
+  --primary-foreground: var(--primary-foreground);
+  --primary-hover: var(--primary-hover);
+  --secondary-hover: var(--secondary-hover);
   
   --font-sans: var(--font-space-grotesk);
   --font-heading: var(--font-lexend);

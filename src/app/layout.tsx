@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lexend, Space_Grotesk } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import { ThemeProvider } from "@/components/Theme/ThemeProvider";
 import "./globals.css";
 
 const lexend = Lexend({
@@ -64,11 +65,14 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={`${spaceGrotesk.variable} ${lexend.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
         <SpeedInsights />
         <Analytics />
       </body>
