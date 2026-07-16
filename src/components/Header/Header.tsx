@@ -6,7 +6,7 @@ import { LanguageToggle } from "../ui/LanguageToggle";
 
 export default function Header() {
     return (
-        <header className="w-full items-center flex justify-between px-16 bg-background font-heading text-base py-6 font-normal">
+        <header className="w-full items-center flex justify-between px-16 bg-background font-heading text-base py-6 font-normal fixed top-0 z-50">
             <nav>
                 <ul className="flex space-x-6">
                     <li><a href="#" className="text-foreground hover:text-primary transition-colors duration-500">Sobre Mim</a></li>
