@@ -6,20 +6,17 @@ import Image from "next/image";
 export function Logo() {
     const { resolvedTheme } = useTheme();
 
-    if (!resolvedTheme) {
-        return null;
-    }
+    const logo =
+        resolvedTheme === "light"
+            ? "/img/logo-lightmode.svg"
+            : "/img/logo-darkmode.svg";
 
     return (
         <Image
-            src={
-                resolvedTheme === "dark" 
-                ? "/img/logo-darkmode.svg" 
-                : "/img/logo-lightmode.svg"                
-            }
+            src={logo}
             alt="siq.dev"
             width={244}
-            height={48}
+            height={40}
         />
     );
 }
