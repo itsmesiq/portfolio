@@ -13,6 +13,7 @@
   --primary-foreground: #000109;
   --primary-hover: #FEE400;
   --secondary-hover: rgba(0, 1, 9, 0.15);
+  --accent: #AB7B00;
 }
 
 .dark {
@@ -28,6 +29,7 @@
   --primary-foreground: #000109;
   --primary-hover: #FEE400;
   --secondary-hover: rgba(255, 255, 255, 0.15);
+  --accent: #FEB600;
 }
 
 @theme inline {
@@ -43,6 +45,7 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-primary-hover: var(--primary-hover);
   --color-secondary-hover: var(--secondary-hover);
+  --color-accent: var(--accent);
 
   --font-sans: var(--font-space-grotesk);
   --font-heading: var(--font-lexend);
