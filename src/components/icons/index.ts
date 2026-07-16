@@ -26,3 +26,8 @@ export { default as TailwindIcon } from "@/assets/icons/techstack/tailwind.svg";
 
 export { default as LogoDark } from "@/assets/logo-darkmode.svg";
 export { default as LogoLight } from "@/assets/logo-lightmode.svg";
+
+export { default as CoachLogo } from "@/assets/companies/coach.svg";
+export { default as WakeLogo } from "@/assets/companies/wake.svg";
+export { default as Shop2GetherLogo } from "@/assets/companies/shop2gether.svg";
+export { default as CasaAlmeidaLogo } from "@/assets/companies/casaalmeida.svg";
