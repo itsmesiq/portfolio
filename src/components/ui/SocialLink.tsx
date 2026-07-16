@@ -5,7 +5,7 @@ type SocialLinkProp = {
     social: Social;
 };
 
-export default function SocialLink({ social }: SocialLinkProp) {
+export function SocialButton({ social }: SocialLinkProp) {
     return (
         <a href={social.href} target="_blank" rel="noopener noreferrer">
             <div className="w-full min-w-80 md:min-w-90 flex items-center justify-between py-5 px-5 bg-surface-gray rounded-lg hover:bg-surface-hover transition-colors duration-300">
@@ -28,3 +28,19 @@ export default function SocialLink({ social }: SocialLinkProp) {
         </a>
     );
 };
+
+export function SocialLink({ social }: SocialLinkProp) {
+    return (
+        <a href={social.href} target="_blank" rel="noopener noreferrer">
+            <div className="w-10 h-10 flex items-center justify-center rounded-lg border border-border hover:bg-secondary-hover transition-colors duration-500">
+                <Image
+                    src={social.image}
+                    alt={social.label}
+                    width={20}
+                    height={20}
+                />
+            </div>
+        </a>
+    );
+}
+
