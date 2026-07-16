@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Button from "../ui/Button";
 import { ThemeToggle } from "../Theme/ThemeToggle";
 import { Logo } from "../ui/Logo";
 import { LanguageToggle } from "../ui/LanguageToggle";
+import { DownloadIcon } from "../icons";
 
 export default function Header() {
     return (
@@ -21,12 +21,7 @@ export default function Header() {
                 <ThemeToggle />
                 <Button href="/cv/curriculoAnaSiqueira.pdf">
                     Baixar Currículo
-                    <Image
-                        src="/img/icon/download.svg"
-                        alt="Download Icon"
-                        width={24}
-                        height={24}
-                    />
+                    <DownloadIcon className="size-6" />
                 </Button>
             </div>
         </header>

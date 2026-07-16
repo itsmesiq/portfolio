@@ -7,6 +7,7 @@
   --muted: #292C34;
   --surface: #C0C4CE;
   --surface-foreground: #000109;
+  --surface-foreground-hover: #FFF;
   --surface-hover: #3C4253;
   --border: #000109;
   --primary: #FEB600;
@@ -22,8 +23,9 @@
   --muted: #C0C4CE;
   --card: #101021;
   --surface: #292C34;
-  --surface-foreground: #FFF;
-  --surface-hover: #3C4253;
+  --surface-foreground: #C0C4CE;
+  --surface-foreground-hover: #FFF;
+  --surface-hover: #101021;
   --border: #FFF;
   --primary: #FEB600;
   --primary-foreground: #000109;
@@ -39,6 +41,7 @@
   --color-card: var(--card);
   --color-surface: var(--surface);
   --color-surface-foreground: var(--surface-foreground);
+  --color-surface-foreground-hover: var(--surface-foreground-hover);
   --color-surface-hover: var(--surface-hover);
   --color-border: var(--border);
   --color-primary: var(--primary);

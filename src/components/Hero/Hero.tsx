@@ -1,43 +1,9 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
+import TechStack from "./TechStack";
 import { socialMedia } from "@/data/social";
 import { SocialLink } from "../ui/SocialLink";
-
-
-const techStack = [
-    {
-        label: 'Figma',
-        image: '/img/hero/hero-icons/figma.svg'
-    },
-    {
-        label: 'HTML',
-        image: '/img/hero/hero-icons/html.svg'
-    },
-    {
-        label: 'CSS',
-        image: '/img/hero/hero-icons/css.svg'
-    },
-    {
-        label: 'JavaScript',
-        image: '/img/hero/hero-icons/javascript.svg'
-    },
-    {
-        label: 'React',
-        image: '/img/hero/hero-icons/react.svg'
-    },
-    {
-        label: 'Next.js',
-        image: '/img/hero/hero-icons/next.svg'
-    },
-    {
-        label: 'Tailwind',
-        image: '/img/hero/hero-icons/tailwind.svg'
-    },
-    {
-        label: 'Github',
-        image: '/img/hero/hero-icons/github.svg'
-    },
-];
+import { DownloadIcon, DoubledownIcon } from "../icons";
 
 export default function Hero() {
     return (
@@ -70,28 +36,11 @@ export default function Hero() {
                     <h1 className="font-heading text-2xl font-semibold text-foreground">UI Designer & Frontend Developer</h1>
                     <p className="font-sans text-sm font-light text-muted">Crio interfaces digitais de alta performance para e-commerce, combinando design estratégico, responsividade e foco em conversão. Habilidade em Frontend para garantir uma implementação fiel ao projeto.</p>
                 </div>
-                <div className="py-6 px-3.5 flex gap-3 flex-wrap justify-start items-center">
-                    {techStack.map((tech) => (
-                        <div key={tech.label} className="flex items-center gap-1 bg-surface rounded-4xl px-3 py-1">
-                            <Image
-                                src={tech.image}
-                                alt={tech.label}
-                                width={18}
-                                height={18}
-                            />
-                            <span className="font-sans text-sm text-muted">{tech.label}</span>
-                        </div>
-                    ))}
-                </div>
+                <TechStack />
                 <div className="px-3.5 flex justify-between">
                     <Button href="/cv/curriculoAnaSiqueira.pdf">
                         Baixar Currículo
-                        <Image
-                            src="/img/icon/download.svg"
-                            alt="Download Icon"
-                            width={24}
-                            height={24}
-                        />
+                        <DownloadIcon className="size-6" />
                     </Button>
 
                     <div className="flex gap-4">
@@ -114,12 +63,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className="flex justify-center items-center py-12">
-                <Image
-                    src="/img/hero/hero-icons/doubledown.svg"
-                    alt="Arrow Down"
-                    width={56}
-                    height={56}
-                />
+                <DoubledownIcon className="size-14" />
             </div>
         </section>
     );

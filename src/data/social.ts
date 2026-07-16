@@ -1,24 +1,25 @@
 import type { Social } from "@/types/social.type";
+import { WhatsappIcon, LinkedinIcon, GithubIcon, EmailIcon } from "../components/icons";
 
 export const socialMedia: Social[] = [
     {
         label: 'Whatsapp',
-        image: '/img/icon/whatsapp.svg',
+        icon: WhatsappIcon,
         href: 'https://wa.me/5522981393078',
     },
     {
         label: 'Linkedin',
-        image: '/img/icon/linkedin.svg',
+        icon: LinkedinIcon,
         href: 'https://www.linkedin.com/in/itsmesiq/',
     },
     {
         label: 'Github',
-        image: '/img/icon/github.svg',
+        icon: GithubIcon,
         href: 'https://github.com/itsmesiq',
     },
     {
         label: 'Email',
-        image: '/img/icon/email.svg',
+        icon: EmailIcon,
         href: 'mailto:anasiqueira.serpentis@gmail.com',
     },
 ];
