@@ -1,8 +1,8 @@
-import Button from "@/components/ui/Button";
 import Image from "next/image";
+import Button from "@/components/ui/Button";
 import { socialMedia } from "@/data/social";
-import * as motion from "motion/react-client";
-import { easeIn, stagger } from "motion";
+import { SocialLink } from "../ui/SocialLink";
+
 
 const techStack = [
     {
@@ -39,142 +39,88 @@ const techStack = [
     },
 ];
 
-const containerVariants = {
-    hidden: {},
-    visible: {
-        transition: {
-            duration: 0.7,
-            delayChildren: 0.2,
-            staggerChildren: 0.15
-        }
-    }
-};
-
-const itemVariants = {
-    hidden: {
-        opacity: 0,
-        y: 20
-    },
-    visible: {
-        opacity: 1,
-        y: 0
-    }
-};
-
 export default function Hero() {
     return (
-        <section className="w-full font-sans text-sm text-text-gray-200 px-4 md:px-16 bg-[url('/img/hero/background.jpg')] bg-cover bg-position-[center_bottom_-0.1rem] 2xl:bg-position-[center_bottom_-1rem] bg-no-repeat ">
-            <div className="w-full flex items-center justify-between py-6">
-                <Button href="/cv/curriculoAnaSiqueira.pdf">
-                    Baixar Currículo
+        <section className="w-full mt-22 px-4 md:px-0 bg-background">
+            <div className="flex items-center justify-center gap-0 2xl:gap-10">
+                <div className="flex flex-col gap-3 px-16 py-16 rounded-r-[40px] bg-card 2xl:rounded-[40px] md:max-w-149.5">
+                <div className="w-117.5 pb-5">
+                    <div className="w-full relative">
+                        <Image
+                            src="/img/hero/profile-banner.jpg"
+                            alt="Profile Banner"
+                            width={470}
+                            height={124}
+                            className="rounded-2xl"
+                        />
+                        <Image
+                            src="/img/hero/profile.png"
+                            alt="Profile Picture"
+                            width={148}
+                            height={148}
+                            className="absolute -bottom-18 left-3"
+                        />
+                    </div>
+                    <div className="ml-44 flex flex-col gap-0 mt-3">
+                        <span className="font-heading text-xl font-medium text-foreground">Ana Siqueira</span>
+                        <span className="font-sans text-sm text-muted">@itsmesiq</span>
+                    </div>
+                </div>
+                <div className="px-3.5 flex flex-col gap-2">
+                    <h1 className="font-heading text-2xl font-semibold text-foreground">UI Designer & Frontend Developer</h1>
+                    <p className="font-sans text-sm font-light text-muted">Crio interfaces digitais de alta performance para e-commerce, combinando design estratégico, responsividade e foco em conversão. Habilidade em Frontend para garantir uma implementação fiel ao projeto.</p>
+                </div>
+                <div className="py-6 px-3.5 flex gap-3 flex-wrap justify-start items-center">
+                    {techStack.map((tech) => (
+                        <div key={tech.label} className="flex items-center gap-1 bg-surface rounded-4xl px-3 py-1">
+                            <Image
+                                src={tech.image}
+                                alt={tech.label}
+                                width={18}
+                                height={18}
+                            />
+                            <span className="font-sans text-sm text-muted">{tech.label}</span>
+                        </div>
+                    ))}
+                </div>
+                <div className="px-3.5 flex justify-between">
+                    <Button href="/cv/curriculoAnaSiqueira.pdf">
+                        Baixar Currículo
+                        <Image
+                            src="/img/icon/download.svg"
+                            alt="Download Icon"
+                            width={24}
+                            height={24}
+                        />
+                    </Button>
+
+                    <div className="flex gap-4">
+                        <div className="flex items-center gap-4">
+                            {socialMedia.map((social) => (
+                                <SocialLink key={social.label} social={social} />
+                            ))}
+                        </div>
+                    </div>                 
+                </div>
+                </div>
+                <div className="overflow-hidden flex justify-start">
                     <Image
-                        src="/img/icon/arrow.svg"
-                        alt="Download Icon"
-                        width={20}
-                        height={20}
+                        src="/img/hero/background.png"
+                        alt="Hero Image"
+                        width={1000}
+                        height={750}
+                        className="hidden sm:inline max-w-none md:w-241.25 md:h-181 2xl:w-250 2xl:h-187.5"
                     />
-                </Button>
-                <div className="flex items-center gap-6">
-                    <span className="hidden sm:inline">Conecte-se comigo!</span>
-                    <ul className="flex items-center justify-center gap-4">
-                        {socialMedia.map((item, index) => (
-                            <li key={index} className="flex items-center justify-center hover:scale-130 transition-transform duration-300">
-                                <a
-                                    href={item.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <Image
-                                        src={item.image}
-                                        alt={item.label}
-                                        width={24}
-                                        height={24}
-                                        aria-label="Entre em contato"
-                                    />
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
                 </div>
             </div>
-            <div className="flex flex-col gap-8 mt-8 lg:max-w-[1560px] items-center mx-auto">
-                <motion.div
-                    initial={{
-                        opacity: 0,
-                        scale: 0.5
-                    }}
-                    animate={{
-                        opacity: 1,
-                        scale: 1
-                    }}
-                    transition={{
-                        duration: 0.3,
-                        ease: "easeIn"
-                    }}
-                >
-                    <Image
-                        src="/img/hero/profile.png"
-                        alt="Profile Image"
-                        width={216}
-                        height={216}
-                        className="w-45 h-45 md:w-54 md:h-54"
-                    />
-                </motion.div>
-                <motion.div className="text-center" variants={containerVariants} initial="hidden" animate="visible">
-                    <motion.p className="text-2xl lg:text-4xl font-light" variants={itemVariants} transition={{ease: "easeIn"}}>Ana Siqueira</motion.p>
-                    <motion.h1 className="font-heading text-3xl lg:text-5xl leading-[normal] text-foreground font-bold" variants={itemVariants} transition={{ease: "easeIn"}}>UI Designer & Frontend Developer</motion.h1>
-                    <motion.p className="text-base lg:text-xl font-light max-w-270 mt-3" variants={itemVariants} transition={{ease: "easeIn"}}>Crio interfaces digitais de alta performance para e-commerce, combinando design estratégico, responsividade e foco em conversão. Habilidade em Frontend para garantir uma implementação fiel ao projeto.</motion.p>
-                </motion.div>
-                <motion.ul 
-                    className="flex gap-4 items-center justify-center my-4 flex-wrap"
-                    initial={{
-                        opacity: 0,
-                        y: 20
-                    }}
-                    animate={{
-                        opacity: 1,
-                        y: 0
-                    }}
-                    transition={{
-                        delay: 0.7,
-                        duration: 0.6,
-                        ease: "easeIn"
-                    }}
-                >
-                    {techStack.map((item, index) => (
-                        <li key={index} className="flex items-center gap-2 px-4 py-2 bg-surface-gray rounded-4xl font-sans text-text-gray-200 text-sm sm:text-base leading-5 font-normal text-center">
-                            <Image
-                                src={item.image}
-                                alt={item.label}
-                                width={24}
-                                height={24}
-                                className="w-4.5 h-4.5 sm:w-6 sm:h-6"
-                            />
-                            {item.label}
-                        </li>
-                    ))}
-                </motion.ul>
-
-            </div>
-            <motion.div 
-                className="flex justify-center px-16 mb-10 md:my-14"
-                animate={{
-                    y: [0,6,0],
-                    opacity: [1,0.8,1]
-                }}
-                transition={{
-                    duration: 2.4,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                }}
-                >
+            <div className="flex justify-center items-center py-12">
                 <Image
                     src="/img/hero/hero-icons/doubledown.svg"
-                    alt="Arrow Down Icon"
+                    alt="Arrow Down"
                     width={56}
                     height={56}
                 />
-            </motion.div>
+            </div>
         </section>
     );
 };
