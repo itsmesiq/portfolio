@@ -22,7 +22,7 @@ export function SocialButton({ social }: SocialLinkProp) {
 export function SocialLink({ social }: SocialLinkProp) {
     return (
         <a href={social.href} target="_blank" rel="noopener noreferrer">
-            <div className="w-10 h-10 flex items-center justify-center rounded-lg border border-border hover:bg-secondary-hover transition-colors duration-500">
+            <div className="w-10 h-10 flex items-center justify-center rounded-lg text-foreground border border-border hover:bg-secondary-hover transition-colors duration-500">
                 {social.icon && <social.icon className="size-5" />}
             </div>
         </a>
