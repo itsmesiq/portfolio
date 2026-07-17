@@ -2,11 +2,14 @@ import { ComponentType, SVGProps } from "react";
 
 export type Project = {
     slug: string;
-    logo: ComponentType<SVGProps<SVGSVGElement>>;
+    logo: {
+        svg: ComponentType<SVGProps<SVGSVGElement>>;
+        classname: string;
+    };
     preview: string;
     href: string;
     title: string;
-    agency: string;
+    credits: string;
     tags: string[];
     full: {
         description: string;

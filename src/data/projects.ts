@@ -4,12 +4,15 @@ import { CoachLogo, WakeLogo, Shop2GetherLogo, CasaAlmeidaLogo } from "@/compone
 export const cases: Project[] = [
     {
         slug: 'coach',
-        logo: CoachLogo,
-        preview: '/img/cases/coachpreview.jpg',
+        logo: {
+            svg: CoachLogo,
+            classname: "w-[279px] h-[32px]"
+        },
+        preview: '/img/cases/preview/coachpreview.jpg',
         href: '/cases/coach',
         title: 'Coach Brasil',
-        agency: 'Agência Oásis',
-        tags: ['UX/UI Design', 'E-commerce', 'Wake'],
+        credits: 'Projeto desenvolvido associado à Agência Oásis',
+        tags: ['UX/UI Design', 'E-Commerce', 'Wake'],
         full: {
             description: 'Projeto de migração do e-commerce da Coach Brasil para a plataforma Wake, com foco em criar uma experiência moderna, responsiva e consistente. O principal desafio foi equilibrar as diretrizes do design global da marca com as expectativas e o comportamento do consumidor brasileiro, adaptando a experiência sem perder a identidade visual da Coach.',
             highlight: '+40 telas desenvolvidas entre Desktop e Mobile',
@@ -25,11 +28,14 @@ export const cases: Project[] = [
     },
     {
         slug: 'wake',
-        logo: WakeLogo,
-        preview: '/img/cases/wakepreview.jpg',
+        logo: {
+            svg: WakeLogo,
+            classname: "w-[142px] h-[40px]"
+        },
+        preview: '/img/cases/preview/wakepreview.jpg',
         href: '/cases/wake',
         title: 'Wake',
-        agency: 'Agência Oásis',
+        credits: 'Projeto desenvolvido associado à Agência Oásis',
         tags: ['UX/UI Design', 'E-Commerce', 'Wake'],
         full: {
             description: 'Criação de um e-commerce demonstrativo para apresentar as principais funcionalidades da plataforma Wake durante o Fórum E-Commerce Brasil 2024 e o Wake Summit. O projeto foi desenvolvido para simular uma operação real de comércio eletrônico, destacando recursos da plataforma por meio de uma experiência moderna, intuitiva e totalmente responsiva.',
@@ -39,6 +45,44 @@ export const cases: Project[] = [
             images: ['/img/cases/wakefull.png', '/img/cases/wakefull2.png', '/img/cases/wakefull3.png', '/img/cases/wakefull4.png']
         }
     },
+    {
+        slug: 'shop2gether',
+        logo: {
+            svg: Shop2GetherLogo,
+            classname: "w-[311px] h-[32px]"
+        },
+        preview: '/img/cases/preview/shop2getherpreview.jpg',
+        href: '/cases/shop2gether',
+        title: 'Shop2Gether',
+        credits: 'Projeto desenvolvido associado à Agência Oásis',
+        tags: ['UX/UI Design', 'E-Commerce', 'Checkout', 'Conversão'],
+        full: {
+            description: 'Redesenho da experiência de checkout da Shop2Gether com foco em aumentar as taxas de conversão e reduzir atritos durante a jornada de compra. Além da reformulação completa do fluxo, o projeto contemplou novas funcionalidades voltadas à experiência do usuário, cross sell e personalização da compra, sempre equilibrando usabilidade e as necessidades do negócio.',
+            contribution: ['UI Design', 'Design Responsivo (Desktop e Mobile)', 'Otimização da Jornada de Compra', 'Prototipação de Interfaces', 'Design de Novas Funcionalidades', 'Colaboração com o time de desenvolvimento'],
+            text: 'Desenvolvimento de uma nova experiência para o checkout e evolução de funcionalidades estratégicas do e-commerce, incluindo:',
+            scope: ['Fluxo completo de checkout, do carrinho à confirmação do pedido', 'Processo de checkout simplificado', 'Cadastro rápido de clientes', 'Carrinho multiseller com agrupamento por entrega', 'Minicart e carrinho com vitrines de Cross Sell', 'Modal de produto adicionado ao carrinho com compra rápida (Compre o Look)', 'Funcionalidade para presentes, incluindo mensagem personalizada e opção de embalagem', 'Aviso automático de alteração de preço para produtos no carrinho', 'Reformulação da seleção de variações (cor e tamanho) na página de produto', 'Nova experiência para produtos esgotados, com sugestões de itens similares e opção Avise-me', 'Reformulação das avaliações de produtos, incluindo fotos, indicadores visuais e filtros de navegação', 'Lightbox promocional para captura de leads com oferta de cupom de desconto'],
+            images: ['/img/cases/shop2getherfull.png', '/img/cases/shop2getherfull2.png', '/img/cases/shop2getherfull3.png', '/img/cases/shop2getherfull4.png']
+        }
+    },
+    {
+        slug: 'casa-almeida',
+        logo: {
+            svg: CasaAlmeidaLogo,
+            classname: "w-[279px] h-[32px]"
+        },
+        preview: '/img/cases/preview/casaalmeidapreview.jpg',
+        href: '/cases/casa-almeida',
+        title: 'Casa Almeida',
+        credits: 'Projeto desenvolvido associado à Agência Oásis',
+        tags: ['UX/UI Design', 'E-Commerce', 'Casa Almeida'],
+        full: {
+            description: 'Redesenho da experiência de checkout da Casa Almeida com foco em aumentar as taxas de conversão e reduzir atritos durante a jornada de compra. Além da reformulação completa do fluxo, o projeto contemplou novas funcionalidades voltadas à experiência do usuário, cross sell e personalização da compra, sempre equilibrando usabilidade e as necessidades do negócio.',
+            contribution: ['UI Design', 'Design Responsivo (Desktop e Mobile)', 'Otimização da Jornada de Compra', 'Prototipação de Interfaces', 'Design de Novas Funcionalidades', 'Colaboração com o time de desenvolvimento'],
+            text: 'Desenvolvimento de uma nova experiência para o checkout e evolução de funcionalidades estratégicas do e-commerce, incluindo:',
+            scope: ['Fluxo completo de checkout, do carrinho à confirmação do pedido', 'Processo de checkout simplificado', 'Cadastro rápido de clientes', 'Carrinho multiseller com agrupamento por entrega', 'Minicart e carrinho com vitrines de Cross Sell', 'Modal de produto adicionado ao carrinho com compra rápida (Compre o Look)', 'Funcionalidade para presentes, incluindo mensagem personalizada e opção de embalagem', 'Aviso automático de alteração de preço para produtos no carrinho', 'Reformulação da seleção de variações (cor e tamanho) na página de produto', 'Nova experiência para produtos esgotados, com sugestões de itens similares e opção Avise-me', 'Reformulação das avaliações de produtos, incluindo fotos, indicadores visuais e filtros de navegação', 'Lightbox promocional para captura de leads com oferta de cupom de desconto'],
+            images: ['/img/cases/casaalmeidafull.png', '/img/cases/casaalmeidafull2.png', '/img/cases/casaalmeidafull3.png', '/img/cases/casaalmeidafull4.png']
+        }
+    }
 ];
 
 export const featuredCompanies : FeaturedCompany[] = [
