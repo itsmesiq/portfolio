@@ -7,7 +7,7 @@ import { DownloadIcon, DoubledownIcon } from "../icons";
 
 export default function Hero() {
     return (
-        <section className="w-full mt-22 px-4 sm:px-10 md:px-0 bg-background">
+        <section id="about" className="w-full mt-22 px-4 sm:px-10 md:px-0 bg-background">
             <div className="flex items-center justify-center gap-0 mt-10 2xl:gap-10 max-h-none md:max-h-161 lg:max-h-none">
                 <div className="flex flex-col gap-3 px-4 py-4 max-w-90.25 sm:max-w-none sm:px-8 sm:py-8 xl:px-16 xl:py-16 rounded-2xl md:rounded-r-3xl md:rounded-l-none lg:rounded-r-[40px] bg-card 2xl:rounded-[40px] lg:max-w-133.5 xl:max-w-149.5">
                     <div className="md:w-117.5 pb-5">

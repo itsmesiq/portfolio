@@ -2,7 +2,7 @@ import { CaseCarousel } from "./CaseCarousel/CaseCarousel";
 
 export default function Cases() {
     return (
-        <section className="w-full">
+        <section id="cases" className="w-full">
             <CaseCarousel />
         </section>
     );

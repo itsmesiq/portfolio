@@ -3,7 +3,7 @@ import { socialMedia } from "@/data/social";
 
 export default function Contact() {
     return (
-        <section>
+        <section id="contact">
             <div className="flex flex-col items-center gap-8 max-w-120 md:max-w-150 text-center font-sans text-sm md:text-base py-16 md:py-28 px-4">
                 <div className="text-foreground flex flex-col items-center gap-2 md:gap-4">
                     <div className="font-heading flex flex-col items-center gap-0">

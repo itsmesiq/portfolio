@@ -1,18 +1,18 @@
 export const menuItens = [
     {
         label: 'Sobre Mim',
-        href: '#',
+        href: '#about',
     },
     {
         label: 'Cases',
-        href: '#',
+        href: '#cases',
     },
     {
         label: 'Skills',
-        href: '#',
+        href: '#skills',
     },
     {
         label: 'Contato',
-        href: '#',
+        href: '#contact',
     }
 ]
