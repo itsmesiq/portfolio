@@ -8,7 +8,7 @@ import Cases from "@/components/Cases/Cases";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center">
+    <div className="flex flex-col flex-1 items-center overflow-x-hidden">
       <Header />
       <Hero />
       <FeaturedCompanies />
