@@ -37,7 +37,7 @@ const techStack = [
 
 export default function TechStack() {
     return (
-        <div className="py-6 px-3.5 flex gap-3 flex-wrap justify-start items-center">
+        <div className="px-0 py-5 sm:py-6 sm:px-3.5 flex gap-3 flex-wrap justify-start items-center">
             {techStack.map((tech) => (
                 <div key={tech.label} className="flex items-center gap-1 bg-surface rounded-4xl px-3 py-1">
                     {tech.icon && <tech.icon className="w-4 h-4" />}

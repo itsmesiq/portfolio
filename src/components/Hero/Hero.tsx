@@ -7,52 +7,53 @@ import { DownloadIcon, DoubledownIcon } from "../icons";
 
 export default function Hero() {
     return (
-        <section className="w-full mt-22 px-4 md:px-0 bg-background">
-            <div className="flex items-center justify-center gap-0 2xl:gap-10">
-                <div className="flex flex-col gap-3 px-16 py-16 rounded-r-[40px] bg-card 2xl:rounded-[40px] md:max-w-149.5">
-                <div className="w-117.5 pb-5">
-                    <div className="w-full relative">
-                        <Image
-                            src="/img/hero/profile-banner.jpg"
-                            alt="Profile Banner"
-                            width={470}
-                            height={124}
-                            className="rounded-2xl"
-                        />
-                        <Image
-                            src="/img/hero/profile.png"
-                            alt="Profile Picture"
-                            width={148}
-                            height={148}
-                            className="absolute -bottom-18 left-3"
-                        />
-                    </div>
-                    <div className="ml-44 flex flex-col gap-0 mt-3">
-                        <span className="font-heading text-xl font-medium text-foreground">Ana Siqueira</span>
-                        <span className="font-sans text-sm text-muted">@itsmesiq</span>
-                    </div>
-                </div>
-                <div className="px-3.5 flex flex-col gap-2">
-                    <h1 className="font-heading text-2xl font-semibold text-foreground">UI Designer & Frontend Developer</h1>
-                    <p className="font-sans text-sm font-light text-muted">Crio interfaces digitais de alta performance para e-commerce, combinando design estratégico, responsividade e foco em conversão. Habilidade em Frontend para garantir uma implementação fiel ao projeto.</p>
-                </div>
-                <TechStack />
-                <div className="px-3.5 flex justify-between">
-                    <Button href="/cv/curriculoAnaSiqueira.pdf">
-                        Baixar Currículo
-                        <DownloadIcon className="size-6" />
-                    </Button>
-
-                    <div className="flex gap-4">
-                        <div className="flex items-center gap-4">
-                            {socialMedia.map((social) => (
-                                <SocialLink key={social.label} social={social} />
-                            ))}
+        <section className="w-full mt-22 px-4 sm:px-10 md:px-0 bg-background">
+            <div className="flex items-center justify-center gap-0 mt-10 2xl:gap-10 max-h-none md:max-h-161 lg:max-h-none">
+                <div className="flex flex-col gap-3 px-4 py-4 max-w-90.25 sm:max-w-none sm:px-8 sm:py-8 xl:px-16 xl:py-16 rounded-2xl md:rounded-r-3xl md:rounded-l-none lg:rounded-r-[40px] bg-card 2xl:rounded-[40px] lg:max-w-133.5 xl:max-w-149.5">
+                    <div className="md:w-117.5 pb-5">
+                        <div className="w-full relative">
+                            <Image
+                                src="/img/hero/profile-banner.jpg"
+                                alt="Profile Banner"
+                                width={470}
+                                height={124}
+                                className="rounded-2xl w-82.25 h-auto sm:w-124 sm:h-auto md:w-117.5 md:h-auto"
+                            />
+                            <Image
+                                src="/img/hero/profile.png"
+                                alt="Profile Picture"
+                                width={148}
+                                height={148}
+                                className="absolute w-28 h-auto sm:w-37 sm:h-auto -bottom-18 left-3"
+                            />
                         </div>
-                    </div>                 
+                        <div className="ml-33 sm:ml-44 flex flex-col gap-0 mt-3">
+                            <span className="font-heading text-xl font-medium text-foreground">Ana Siqueira</span>
+                            <span className="font-sans text-sm text-muted">@itsmesiq</span>
+                        </div>
+                    </div>
+                    
+                    <div className="sm:px-3.5 flex flex-col gap-2">
+                        <h1 className="font-heading text-xl sm:text-2xl font-semibold text-foreground">UI Designer & Frontend Dev</h1>
+                        <p className="font-sans text-sm font-light text-muted">Crio interfaces digitais de alta performance para e-commerce, combinando design estratégico, responsividade e foco em conversão. Habilidade em Frontend para garantir uma implementação fiel ao projeto.</p>
+                    </div>
+                    <TechStack />
+                    <div className="pb-5 sm:pb-0 sm:px-3.5 flex flex-col items-center justify-between gap-6 sm:flex-row">
+                        <Button href="/cv/curriculoAnaSiqueira.pdf">
+                            Baixar Currículo
+                            <DownloadIcon className="size-6" />
+                        </Button>
+
+                        <div className="flex gap-4">
+                            <div className="flex items-center gap-6 sm:gap-4">
+                                {socialMedia.map((social) => (
+                                    <SocialLink key={social.label} social={social} />
+                                ))}
+                            </div>
+                        </div>                 
+                    </div>
                 </div>
-                </div>
-                <div className="overflow-hidden flex justify-start">
+                <div className="overflow-hidden hidden md:flex justify-start">
                     <Image
                         src="/img/hero/background.png"
                         alt="Hero Image"
@@ -62,7 +63,7 @@ export default function Hero() {
                     />
                 </div>
             </div>
-            <div className="flex justify-center items-center py-12">
+            <div className="flex justify-center items-center py-5 sm:py-8 lg:py-12">
                 <DoubledownIcon className="size-14" />
             </div>
         </section>
