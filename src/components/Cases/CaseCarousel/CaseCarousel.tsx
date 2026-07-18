@@ -1,10 +1,9 @@
 "use client";
 
 import { cases } from "@/data/projects";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { CaseImage } from "./CaseImage";
 import { CaseOverlay } from "./CaseOverlay";
-import { motion } from "motion/react";
 import useEmblaCarousel from "embla-carousel-react";
 
 export function CaseCarousel() {
@@ -47,7 +46,7 @@ export function CaseCarousel() {
                 <div ref={emblaRef} className="overflow-hidden">
                     <div className="grid grid-flow-col xl:auto-cols-[75%] 2xl:auto-cols-[60%]">
                         {cases.map((project, index) => (
-                            <CaseImage key={`${project.slug}-${index}`} project={project} index={index} />
+                            <CaseImage key={`${project.slug}-${index}`} project={project} index={index} activeIndex={currentIndex} />
                         ))}
                     </div>
                 </div>
