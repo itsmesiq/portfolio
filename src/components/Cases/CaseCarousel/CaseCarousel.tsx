@@ -50,7 +50,7 @@ export function CaseCarousel() {
                         ))}
                     </div>
                 </div>
-                <div className="absolute left-0 right-0 bottom-11 bg-[linear-gradient(180deg,rgba(16,16,33,0)_0%,#000109_100%)] w-full h-[82%] sm:h-[44.15%]"></div>
+                <div className="absolute left-0 right-0 bottom-11 bg-[linear-gradient(180deg,rgba(16,16,33,0)_0%,#000109_100%)] w-full h-[55%] sm:h-[44.15%]"></div>
                 <CaseOverlay
                     currentProject={currentProject}
                     currentIndex={currentIndex}

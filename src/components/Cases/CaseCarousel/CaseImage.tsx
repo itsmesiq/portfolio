@@ -9,14 +9,14 @@ type CaseImageProps = {
 
 export function CaseImage({ project, activeIndex, index }: CaseImageProps) {
     return (
-        <div className="relative w-full shrink-0">
+        <div className="relative h-[clamp(544px,55vw,820px)] overflow-hidden shrink-0">
             <Image
                 src={project.preview}
                 alt={project.title}
-                width={1080}
-                height={724}
+                width={1152}
+                height={2598}
                 loading="eager"
-                className="w-full h-auto object-cover"
+                className="object-cover object-top"
             />
 
             <div className={`
