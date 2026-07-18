@@ -35,3 +35,6 @@ export { default as CasaAlmeidaLogo } from "@/assets/companies/casaalmeida.svg";
 export { default as ArrowLeftIcon } from "@/assets/icons/arrow-left.svg";
 export { default as ArrowRightIcon } from "@/assets/icons/arrow-right.svg";
 export { default as MoreIcon } from "@/assets/icons/plus.svg";
+
+export { default as MenuIcon } from "@/assets/icons/hamburger-menu.svg";
+export { default as CloseIcon } from "@/assets/icons/close-icon.svg";
