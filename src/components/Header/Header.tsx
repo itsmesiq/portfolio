@@ -7,13 +7,16 @@ import { CloseIcon, DownloadIcon, MenuIcon } from "../icons";
 import { DesktopNav } from "./DesktopNav";
 import { useState } from "react";
 import { MobileMenu } from "./MobileMenu";
+import Link from "next/link";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <header className="w-full items-center flex justify-between py-6 px-5 lg:px-16 bg-background font-heading text-base font-normal fixed top-0 z-50">
             <DesktopNav />
-            <Logo />
+            <Link href="//#region ">
+                <Logo />
+            </Link>
             <div className="hidden lg:flex items-center gap-5">
                 <LanguageToggle />
                 <ThemeToggle />
