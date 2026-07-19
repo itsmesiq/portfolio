@@ -35,10 +35,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 <div className="flex justify-center py-10 px-5">
                     <div className="h-px w-full rounded-full bg-primary" />
                 </div>
-                {/* <div className="flex items-center gap-10 px-10">
+                <div className="flex items-center gap-10 px-10">
                     <LanguageToggle />
                     <ThemeToggle />
-                </div> */}
+                </div>
                 <div className="flex flex-col gap-6 justify-center py-10 px-5">
                     <Button href="/cv/curriculoAnaSiqueira.pdf">
                         Baixar Currículo
