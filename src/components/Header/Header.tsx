@@ -22,8 +22,8 @@ export default function Header() {
                 </Link>
             </motion.div>
             <div className="hidden lg:flex items-center gap-5">
-                <LanguageToggle />
-                <ThemeToggle />
+                {/* <LanguageToggle /> */}
+                {/* <ThemeToggle /> */}
                 <Button href="/cv/curriculoAnaSiqueira.pdf">
                     Baixar Currículo
                     <DownloadIcon className="size-6" />

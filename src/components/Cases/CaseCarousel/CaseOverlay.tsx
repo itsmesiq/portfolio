@@ -37,7 +37,7 @@ export function CaseOverlay({ currentProject, currentIndex, onNext, onPrevious, 
                             </div>
                         </motion.div>
                     </AnimatePresence>
-                    <Button project={currentProject} index={currentIndex} />
+                    {/* <Button project={currentProject} index={currentIndex} /> */}
                 </div>
                 <CarouselNavigation onNext={onNext} onPrevious={onPrevious} total={total} currentIndex={currentIndex} onSelect={onSelect} />
             </div>
