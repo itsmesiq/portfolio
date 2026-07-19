@@ -89,22 +89,22 @@ export const featuredCompanies : FeaturedCompany[] = [
     {
         label: 'Coach',
         image: CoachLogo,
-        className: 'w-[150px] h-[17px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25 opacity-60 hover:opacity-100 transition-opacity duration-300'
+        className: 'w-[150px] h-[17px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25'
     },
     {
         label: 'Shop2Gether',
         image: Shop2GetherLogo,
-        className: 'w-[150px] h-[17px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25 opacity-60 hover:opacity-100 transition-opacity duration-300'
+        className: 'w-[150px] h-[17px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25'
     },
     {
         label: 'Wake',
         image: WakeLogo,
-        className: 'w-[80px] h-[22px] max-w-14.25 max-h-4 sm:max-w-20 sm:max-h-5.5 opacity-60 hover:opacity-100 transition-opacity duration-300'
+        className: 'w-[80px] h-[22px] max-w-14.25 max-h-4 sm:max-w-20 sm:max-h-5.5'
     },
     { 
         label: 'Casa Almeida',
         image: CasaAlmeidaLogo,
-        className: 'w-[150px] h-[15px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25 opacity-60 hover:opacity-100 transition-opacity duration-300'
+        className: 'w-[150px] h-[15px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25'
     }    
 ];
 
