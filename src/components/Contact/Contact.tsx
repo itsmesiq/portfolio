@@ -4,7 +4,7 @@ import { socialMedia } from "@/data/social";
 export default function Contact() {
     return (
         <section id="contact">
-            <div className="flex flex-col items-center gap-8 max-w-120 md:max-w-150 text-center font-sans text-sm py-16 px-4">
+            <div className="flex flex-col items-center gap-8 max-w-120 md:max-w-150 text-center font-sans text-sm mb-16 px-4">
                 <div className="text-foreground flex flex-col items-center gap-2 md:gap-4">
                     <div className="font-heading flex flex-col items-center gap-0">
                         <span className="text-xl font-normal text-accent">Entre em contato</span>
