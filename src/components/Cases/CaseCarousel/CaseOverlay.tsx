@@ -26,7 +26,7 @@ export function CaseOverlay({ currentProject, currentIndex, onNext, onPrevious, 
                             initial={{ opacity: 0, y: 24 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -24 }}
-                            transition={{ duration: 0.5 }}
+                            transition={{ duration: 0.3 }}
                         >
                             <Badges project={currentProject} index={currentIndex} />
                             <div className="flex flex-col items-start gap-3">
