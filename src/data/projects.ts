@@ -55,7 +55,7 @@ export const cases: Project[] = [
         href: '/cases/shop2gether',
         title: 'Shop2Gether',
         credits: 'Projeto desenvolvido associado à Agência Oásis',
-        tags: ['UX/UI Design', 'E-Commerce', 'Checkout', 'Conversão'],
+        tags: ['UX/UI Design', 'E-Commerce', 'Checkout' ],
         full: {
             description: 'Redesenho da experiência de checkout da Shop2Gether com foco em aumentar as taxas de conversão e reduzir atritos durante a jornada de compra. Além da reformulação completa do fluxo, o projeto contemplou novas funcionalidades voltadas à experiência do usuário, cross sell e personalização da compra, sempre equilibrando usabilidade e as necessidades do negócio.',
             contribution: ['UI Design', 'Design Responsivo (Desktop e Mobile)', 'Otimização da Jornada de Compra', 'Prototipação de Interfaces', 'Design de Novas Funcionalidades', 'Colaboração com o time de desenvolvimento'],
