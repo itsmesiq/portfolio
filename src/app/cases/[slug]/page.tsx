@@ -1,3 +1,4 @@
+import HeroCases from "@/components/CasesPage/Hero";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
@@ -24,6 +25,7 @@ export default async function CasePage({ params }: Props) {
     return (
         <div className="flex flex-col flex-1 items-center overflow-x-hidden">
             <Header />
+            <HeroCases project={project} />
             <Contact />
             <Footer />
         </div>

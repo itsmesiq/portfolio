@@ -1,10 +1,14 @@
-export const cases = [
+import { CoachLogo, DevicesIcon, LayersIcon, LayoutIcon, ShoppingBagIcon } from '@/components/icons';
+import type { Case } from '../types/case.type';
+
+export const cases: Case[] = [
     {
         slug: 'coach',
         title: 'Coach',
+        logo: CoachLogo,
         client: 'Coach Brasil',
 
-        preview: '',
+        preview: '/img/cases/coach/preview.png',
 
         tags: [
             'UX/UI Design',
@@ -14,25 +18,26 @@ export const cases = [
 
         subtitle: 'Migração de e-commerce para Wake com foco em performance, usabilidade e experiência',
         description: 'Projeto desenvolvido para a Coach Brasil com o objetivo de migrar sua loja para a plataforma Wake, modernizando a interface e otimizando a experiência de compra em todos os dispositivos',
+        credits: '*Projeto desenvolvido associado à Agencia Oasis',
 
-        hightlights: [
+        highlights: [
             {
-                icon: '',
+                icon: LayersIcon,
                 title: '40+',
                 subtitle: 'Telas desenvolvidas',
             },
             {
-                icon: '',
+                icon: LayoutIcon,
                 title: '6',
                 subtitle: 'PLPs otimizadas',
             },
             {
-                icon: '',
+                icon: DevicesIcon,
                 title: 'Responsivo',
                 subtitle: 'Layout desktop e mobile',
             },
             {
-                icon: '',
+                icon: ShoppingBagIcon,
                 title: 'Wake Platform',
                 subtitle: 'E-commerce headless',
             },

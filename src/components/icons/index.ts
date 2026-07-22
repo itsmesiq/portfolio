@@ -38,3 +38,10 @@ export { default as MoreIcon } from "@/assets/icons/plus.svg";
 
 export { default as MenuIcon } from "@/assets/icons/hamburger-menu.svg";
 export { default as CloseIcon } from "@/assets/icons/close-icon.svg";
+
+export { default as BackArrow } from "@/assets/icons/back-arrow.svg";
+
+export { default as LayersIcon } from "@/assets/icons/layers.svg";
+export { default as LayoutIcon } from "@/assets/icons/grid.svg";
+export { default as DevicesIcon } from "@/assets/icons/devices.svg";
+export { default as ShoppingBagIcon } from "@/assets/icons/shop-bag.svg";
