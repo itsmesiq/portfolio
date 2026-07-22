@@ -10,10 +10,11 @@ export type Case ={
     subtitle: string;
     description: string;
     credits: string;
-    highlights?: {
+    highlights: {
         icon: ComponentType<SVGProps<SVGSVGElement>>;
         title: string;
         subtitle: string;
+        width: string;
     }[];
 
     challenge: string;
