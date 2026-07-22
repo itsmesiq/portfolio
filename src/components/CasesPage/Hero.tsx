@@ -2,14 +2,14 @@ import Image from "next/image";
 import { BackBtn } from "../ui/BackBtn";
 import type { Case } from "@/types/case.type";
 
-type CaseHeroProps = {
+type CaseProps = {
     project: Case;
 };
 
-export default function HeroCases({ project }: CaseHeroProps) {    
+export default function HeroCases({ project }: CaseProps) {    
     return (
-        <section id="hero" className="w-full mt-22 px-4 sm:px-10 md:px-1 lg:px-16 bg-background">
-            <div className="flex justify-end mx-16">
+        <section id="hero" className="w-full mt-22 px-4 sm:px-10 md:px-1 lg:px-16">
+            <div className="flex justify-end mt-5">
                 <BackBtn />
             </div>
             <div className="flex items-center py-16 justify-between 2xl:justify-center 2xl:gap-16">
