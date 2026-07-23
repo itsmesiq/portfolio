@@ -1,5 +1,5 @@
 import HeroCases from "@/components/CasesPage/Hero";
-import { Highlights } from "@/components/CasesPage/CaseInfo";
+import { Highlights, MyProcess, ProjectDescription } from "@/components/CasesPage/CaseInfo";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
@@ -34,6 +34,8 @@ export default async function CasePage({ params }: Props) {
                 <Header />
                 <HeroCases project={project} />
                 <Highlights project={project} />
+                <ProjectDescription project={project} />
+                <MyProcess />
                 <Contact />
                 <Footer />
             </main>

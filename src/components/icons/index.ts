@@ -45,3 +45,14 @@ export { default as LayersIcon } from "@/assets/icons/layers.svg";
 export { default as LayoutIcon } from "@/assets/icons/grid.svg";
 export { default as DevicesIcon } from "@/assets/icons/devices.svg";
 export { default as ShoppingBagIcon } from "@/assets/icons/shop-bag.svg";
+
+export { default as ChallengeIcon } from "@/assets/icons/challenge-icon.svg";
+export { default as ContributionIcon } from "@/assets/icons/contribution-icon.svg";
+export { default as ScopeIcon } from "@/assets/icons/scope-icon.svg";
+
+export { default as ProcessResearchIcon } from "@/assets/icons/process-search.svg";
+export { default as ProcessArchitectureIcon } from "@/assets/icons/process-information.svg";
+export { default as ProcessDesignIcon } from "@/assets/icons/process-design.svg";
+export { default as ProcessPrototypeIcon } from "@/assets/icons/process-prototype.svg";
+export { default as ProcessHandoff } from "@/assets/icons/process-handoff.svg";
+
