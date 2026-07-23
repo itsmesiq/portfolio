@@ -39,6 +39,7 @@ export default function Hero() {
                                 alt="Profile Banner"
                                 width={470}
                                 height={124}
+                                loading="eager"
                                 className="rounded-2xl w-82.25 h-auto sm:w-124 sm:h-auto md:w-117.5 md:h-auto"
                             />
                             <Image
@@ -46,6 +47,7 @@ export default function Hero() {
                                 alt="Profile Picture"
                                 width={148}
                                 height={148}
+                                loading="eager"
                                 className="absolute w-28 h-auto sm:w-37 sm:h-auto -bottom-18 left-3"
                             />
                         </div>

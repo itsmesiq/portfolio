@@ -40,7 +40,8 @@ export default function HeroCases({ project }: CaseProps) {
                     alt={project.title}
                     width={1000}
                     height={558.25}
-                    className="h-auto object-cover w-206 2xl:w-250"
+                    loading="eager"
+                    className="h-auto object-cover w-206 2xl:w-250 2xl:h-auto"
                 />
 
 
