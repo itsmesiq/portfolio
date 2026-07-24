@@ -6,6 +6,7 @@ import Header from "@/components/Header/Header";
 import BackgroundGlow from "@/components/ui/BackgroundGlow";
 import { cases } from "@/data/cases";
 import { notFound } from "next/navigation";
+import { Gallery } from "@/components/CasesPage/Gallery";
 
 type Props = {
     params: {
@@ -36,6 +37,7 @@ export default async function CasePage({ params }: Props) {
                 <Highlights project={project} />
                 <ProjectDescription project={project} />
                 <MyProcess />
+                <Gallery gallery={project.gallery} />
                 <Contact />
                 <Footer />
             </main>

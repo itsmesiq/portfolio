@@ -20,5 +20,9 @@ export type Case ={
     challenge: string;
     contribution: string[];
     scope: string[];
-    gallery: string[];
+    gallery: {
+        thumb: string;
+        alt: string;
+        images: string[];
+    }[];
 }

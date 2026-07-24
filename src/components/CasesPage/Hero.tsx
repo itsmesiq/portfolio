@@ -38,12 +38,11 @@ export default function HeroCases({ project }: CaseProps) {
                 <Image
                     src={project.preview}
                     alt={project.title}
-                    width={1000}
-                    height={558.25}
+                    width={1500}
+                    height={841}
                     loading="eager"
-                    className="h-auto object-cover w-206 2xl:w-250 2xl:h-auto"
+                    className="h-auto w-206 2xl:w-250 2xl:h-auto object-cover"
                 />
-
 
             </div>
         </section>
