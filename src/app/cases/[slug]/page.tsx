@@ -7,6 +7,7 @@ import BackgroundGlow from "@/components/ui/BackgroundGlow";
 import { cases } from "@/data/cases";
 import { notFound } from "next/navigation";
 import { Gallery } from "@/components/CasesPage/Gallery";
+import BottomNav from "@/components/CasesPage/BottomNav";
 
 type Props = {
     params: {
@@ -38,6 +39,7 @@ export default async function CasePage({ params }: Props) {
                 <ProjectDescription project={project} />
                 <MyProcess />
                 <Gallery gallery={project.gallery} />
+                <BottomNav />
                 <Contact />
                 <Footer />
             </main>

@@ -1,6 +1,6 @@
 import { BackArrow, ForwardArrow, SiqIcon } from "../icons";
 import GlassCard from "../ui/GlassCard";
-import { easeInOut, motion } from "motion/react";
+import { motion } from "motion/react";
 
 type OverlayNextImageProps = {
     onPrevious?: () => void;
@@ -23,7 +23,7 @@ export default function OverlayNextImage({ onPrevious, onNext, previousItem, nex
             <GlassCard className="px-8 py-4">
                 <div className="grid grid-cols-3 items-center">
                     <div>             
-                        <motion.button onClick={onPrevious} whileHover={{ scale: 1.05, transition: { duration: 0.2, ease: easeInOut } }} className="flex items-center gap-3 cursor-pointer text-foreground">
+                        <motion.button onClick={onPrevious} whileHover={{ scale: 1.05, transition: { duration: 0.2, ease: "easeInOut" } }} className="flex items-center gap-3 cursor-pointer text-foreground">
                             <BackArrow className="size-8" />
                             <div className="text-left flex flex-col">
                                 <span className="font-sans text-sm font-normal uppercase m-0">Anterior</span>
@@ -35,7 +35,7 @@ export default function OverlayNextImage({ onPrevious, onNext, previousItem, nex
                         <SiqIcon className="size-10" /> 
                     </div>
                     <div className="flex justify-end">                 
-                        <motion.button onClick={onNext} whileHover={{ scale: 1.05, transition: { duration: 0.2, ease: easeInOut } }} className="flex items-center gap-3 cursor-pointer text-foreground">
+                        <motion.button onClick={onNext} whileHover={{ scale: 1.05, transition: { duration: 0.2, ease: "easeInOut" } }} className="flex items-center gap-3 cursor-pointer text-foreground">
                             <div className="text-right flex flex-col">
                                 <span className="font-sans text-sm font-normal uppercase m-0">Próximo</span>
                                 <h3 className="font-heading text-lg font-bold leading-4.5">{nextItem?.title}</h3> 
