@@ -5,7 +5,11 @@ export const cases: Case[] = [
     {
         slug: 'coach',
         title: 'Coach',
-        logo: CoachLogo,
+        color: '#EABFAC',
+        logo: {
+            svg: CoachLogo,
+            size: 'w-104.5 h-12',
+        },
         client: 'Coach Brasil',
 
         preview: '/img/cases/coach/preview.png',
@@ -116,111 +120,117 @@ export const cases: Case[] = [
     {
         slug: 'wake',
         title: 'Wake',
-        logo: WakeLogo,
+        color: '#C405F2',
+        logo: {
+            svg: WakeLogo,
+            size: 'w-53 h-15',
+        },
         client: 'Wake',
 
-        preview: '/img/cases/coach/preview.png',
+        preview: '/img/cases/wake/preview.png',
 
         tags: [
             'UX/UI Design',
             'E-Commerce',
-            'Checkout',
+            'Prototyping',
             'Wake',
         ],
 
-        subtitle: 'Migração de e-commerce para Wake com foco em performance, usabilidade e experiência',
-        description: 'Projeto desenvolvido para a Coach Brasil com o objetivo de migrar sua loja para a plataforma Wake, modernizando a interface e otimizando a experiência de compra em todos os dispositivos',
+        subtitle: 'E-commerce demonstrativo desenvolvido para apresentar a plataforma Wake durante os principais eventos do setor.',
+        description: 'Projeto criado em parceria com a Agência Oasis para demonstrar as capacidades da plataforma Wake durante o Fórum E-Commerce Brasil 2024 e o Wake Summit. O e-commerce simula uma operação completa de varejo digital, destacando recursos da plataforma por meio de uma experiência moderna, responsiva e altamente interativa.',
         credits: '*Projeto desenvolvido associado à Agencia Oasis',
 
         highlights: [
             {
                 icon: LayersIcon,
-                title: '40+',
+                title: '20+',
                 subtitle: 'Telas desenvolvidas',
                 width: 'w-[97px]',
             },
             {
                 icon: LayoutIcon,
-                title: '6',
-                subtitle: 'PLPs otimizadas',
+                title: '4',
+                subtitle: 'Versões de PDP',
                 width: 'w-[97px]',
             },
             {
                 icon: DevicesIcon,
                 title: 'Responsivo',
-                subtitle: 'Layout desktop e mobile',
+                subtitle: 'Desktop e Mobile',
                 width: 'w-[134px]',
             },
             {
                 icon: ShoppingBagIcon,
                 title: 'Wake Platform',
-                subtitle: 'E-commerce headless',
+                subtitle: 'Checkout headless',
                 width: 'w-[170px]',
             },
         ],
-        challenge: 'Migrar o e-commerce da Coach Brasil para a plataforma Wake, mantendo a identidade da marca e melhorando a performance e a usabilidade do site. Além disso, era necessário adaptar componentes e fluxos para o público brasileiro.',
+        challenge: 'Desenvolver um e-commerce demonstrativo capaz de apresentar, de forma prática, as principais funcionalidades da plataforma Wake durante grandes eventos do setor. O projeto precisava representar uma operação completa de comércio eletrônico, incorporando fluxos reais de compra, autenticação, conteúdo institucional e recursos interativos, mantendo uma experiência intuitiva tanto para visitantes quanto para usuários convidados.',
         contribution: [
-            'UI Design',
-            'Design Responsivo (Desktop e Mobile)',
-            'Design System no Figma',
+            'UI Design Resposivo (Desktop e Mobile)',
+            'Design System',
+            'Pesquisa e organização da identidade visual do projeto',
+            'Criação de imagens e mockups para os produtos',
             'Prototipação de interfaces',
             'Arquitetura de componentes',
+            'Fluxos de autenticação e navegação',
+            'E-mails trasacionais',
             'Colaboração com o time de desenvolvimento',
         ],
         scope: [
-            'Páginas de categoria (PLP) com 6 variações',
-            'Página de Produto (PDP)',
+            'Spots de produto com Quickbuy',
+            'Página de Categoria (PLP)',
+            'Página de Produto (PDP) com 3 variações',
+            'Página de Produto (PDP) com funcionalidade Compre o Look',
             'Área do Cliente',
             'Fluxo completo de Checkout',
-            'Páginas institucionais e conteúdos personalizados',
+            'Carrinho com separação de categorias e Multiseller',
+            'Modo demonstrativo com destaque das funcionalidades da plataforma',
+            'Landing Page para evento com 2 variações (Summit e Fórum)',
+            'Agenda interativa de palestras com modal de detalhes',
         ],
         gallery: [
             {
-                title: 'Home',
-                thumb: '/img/cases/coach/thumb/thumb1.webp',
-                alt: 'Home Coach - Imagem do projeto Coach',
+                title: 'Compre o Look',
+                thumb: '/img/cases/wake/thumb/thumb1.webp',
+                alt: 'PDP Compre o Look - Imagem do projeto Wake',
                 images: [
-                    '/img/cases/coach/home1.webp',
-                    '/img/cases/coach/home2.webp',
-                    '/img/cases/coach/home3.webp'
+                    '/img/cases/wake/look1.webp',
+                    '/img/cases/wake/look2.webp',
+                    '/img/cases/wake/look3.webp'
                 ]
             },
             {
-                title: 'PDP',
-                thumb: '/img/cases/coach/thumb/thumb2.webp',
-                alt: 'PDP Coach - Imagem do projeto Coach',
+                title: 'PDP V1',
+                thumb: '/img/cases/wake/thumb/thumb2.webp',
+                alt: 'PDP V1 - Imagem do projeto Wake',
                 images: [
-                    '/img/cases/coach/pdp1.webp',
-                    '/img/cases/coach/pdp2.webp',
-                    '/img/cases/coach/pdp3.webp'
+                    '/img/cases/wake/v1pdp1.webp',
+                    '/img/cases/wake/v1pdp2.webp',
+                    '/img/cases/wake/v1pdp3.webp',
+                    '/img/cases/wake/v1pdp4.webp',
                 ]
             },
             {
-                title: 'PLP Nolita',
-                thumb: '/img/cases/coach/thumb/thumb3.webp',
-                alt: 'PLP Nolita Collection - Imagem do projeto Coach',
+                title: 'Wake Summit 2024',
+                thumb: '/img/cases/wake/thumb/thumb3.webp',
+                alt: 'Landing Page Wake Summit2024 - Imagem do projeto Wake',
                 images: [
-                    '/img/cases/coach/nolita1.webp',
-                    '/img/cases/coach/nolita2.webp',
-                    '/img/cases/coach/nolita3.webp',
-                    '/img/cases/coach/nolita4.webp',
-                    '/img/cases/coach/nolita5.webp',
-                    '/img/cases/coach/nolita6.webp',
-                    '/img/cases/coach/nolita7.webp'
+                    '/img/cases/wake/summit1.webp',
+                    '/img/cases/wake/summit2.webp',
+                    '/img/cases/wake/summit3.webp',
+                    '/img/cases/wake/summit4.webp',
                 ]
             },
             {
-                title: 'PLP Teri',
-                thumb: '/img/cases/coach/thumb/thumb4.webp',
-                alt: 'PLP Teri Collection - Imagem do projeto Coach',
+                title: 'PDP V2',
+                thumb: '/img/cases/wake/thumb/thumb4.webp',
+                alt: 'PDP V2 - Imagem do projeto Wake',
                 images: [
-                    '/img/cases/coach/teri1.webp',
-                    '/img/cases/coach/teri2.webp',
-                    '/img/cases/coach/teri3.webp',
-                    '/img/cases/coach/teri4.webp',
-                    '/img/cases/coach/teri5.webp',
-                    '/img/cases/coach/teri6.webp',
-                    '/img/cases/coach/teri7.webp'
+                    '/img/cases/wake/v2pdp1.webp',
+                    '/img/cases/wake/v2pdp2.webp',
+                    '/img/cases/wake/v2pdp3.webp',
                 ]
             }
         ]
@@ -228,7 +238,11 @@ export const cases: Case[] = [
     {
         slug: 'shop2gether',
         title: 'Shop2Gether',
-        logo: Shop2GetherLogo,
+        color: '#EABFAC',
+        logo: {
+            svg: Shop2GetherLogo,
+            size: 'w-104.5 h-12',
+        },
         client: 'Shop2Gether',
 
         preview: '/img/cases/coach/preview.png',
@@ -340,7 +354,11 @@ export const cases: Case[] = [
     {
         slug: 'casa-almeida',
         title: 'Casa Almeida',
-        logo: CasaAlmeidaLogo,
+        color: '#C405F2',
+        logo: {
+            svg: CasaAlmeidaLogo,
+            size: 'w-104.5 h-12',
+        },
         client: 'Casa Almeida',
 
         preview: '/img/cases/coach/preview.png',
