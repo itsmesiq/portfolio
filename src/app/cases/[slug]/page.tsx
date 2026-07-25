@@ -22,6 +22,11 @@ export default async function CasePage({ params }: Props) {
         c => c.slug === slug
     );
 
+    const currentIndex = cases.findIndex(c => c.slug === slug);
+
+    const previousCase = cases[(currentIndex - 1 + cases.length) % cases.length];
+    const nextCase = cases[(currentIndex + 1) % cases.length];
+
     if (!project) {
         notFound();
     }
@@ -39,7 +44,7 @@ export default async function CasePage({ params }: Props) {
                 <ProjectDescription project={project} />
                 <MyProcess />
                 <Gallery gallery={project.gallery} />
-                <BottomNav />
+                <BottomNav previousCase={previousCase} nextCase={nextCase} />
                 <Contact />
                 <Footer />
             </main>
