@@ -38,9 +38,9 @@ export function Highlights({ project }: CaseProps) {
 export function ProjectDescription({ project }: CaseProps) {
     return (
         <section className="w-full px-16 mb-8">
-            <GlassCard className="px-12 py-8">
-                <div className="flex justify-between items-start 2xl:justify-center 2xl:gap-30">
-                    <div className="max-w-73">
+            <GlassCard className="px-12 py-8 2xl:px-54">
+                <div className="flex justify-between items-start">
+                    <div className="max-w-86">
                         <div className="flex items-center gap-2 font-heading text-xl font-bold mb-4">
                             <ChallengeIcon className="size-6 text-primary" />
                             <h2>Desafio</h2>
@@ -48,20 +48,32 @@ export function ProjectDescription({ project }: CaseProps) {
                         <p className="font-sans text-sm text-muted font-light">{project.challenge}</p>
                     </div>
                     <div className="w-0.5 h-42 bg-primary"></div>
-                    <div className="max-w-73">
+                    <div className="max-w-85">
                         <div className="flex items-center gap-2 font-heading text-xl font-bold mb-4">
                             <ContributionIcon className="size-6 text-primary" />
                             <h2>Minha Contribuição</h2>
                         </div>
-                        <p className="font-sans text-sm text-muted font-light">{project.contribution}</p>
+                        <ul className="font-sans text-sm text-muted font-light list-disc list-inside">
+                            {project.contribution.map((item, index) => (
+                                <li key={index}>
+                                    {item}
+                                </li>      
+                            ))}
+                        </ul>
                     </div>
                     <div className="w-0.5 h-42 bg-primary"></div>
-                     <div className="max-w-73">
+                     <div className="max-w-95">
                         <div className="flex items-center gap-2 font-heading text-xl font-bold mb-4">
                             <ScopeIcon className="size-6 text-primary" />
                             <h2>Escopo do Projeto</h2>
                         </div>
-                        <p className="font-sans text-sm text-muted font-light">{project.scope}</p>
+                        <ul className="font-sans text-sm text-muted font-light list-disc list-inside">
+                            {project.scope.map((item, index) => (
+                                <li key={index}>
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
                     </div>                   
                 </div>
             </GlassCard>
