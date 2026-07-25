@@ -9,13 +9,19 @@ type GalleryProps = {
 };
 
 export function Gallery({ gallery }: GalleryProps) {
-    const [selectedImage, setSelectedImage] = React.useState<{ images: string[]; alt: string } | null>(null);
+    const [selectedIndex, setSelectedIndex] = React.useState<number | null>(null);
+
+    const currentItem = selectedIndex !== null ? gallery[selectedIndex] : null;
+
+    const previousItem = gallery[(selectedIndex! - 1 + gallery.length) % gallery.length];
+
+    const nextItem = gallery[(selectedIndex! + 1) % gallery.length];
 
     return (
         <section className="w-full mb-22">
              <div className="grid grid-cols-1 md:grid-cols-2">
                 {gallery.map((galleryItem, index) => (
-                <div key={index} className="w-full h-[clamp(548px,50vw,620px)] overflow-hidden shrink-0 cursor-zoom-in" onClick={() => setSelectedImage({ images: galleryItem.images, alt: galleryItem.alt })}>
+                <div key={index} className="w-full h-[clamp(548px,50vw,620px)] overflow-hidden shrink-0 cursor-zoom-in" onClick={() => setSelectedIndex(index)}>
                     <Image
                         src={galleryItem.thumb}
                         alt={galleryItem.alt}
@@ -28,11 +34,18 @@ export function Gallery({ gallery }: GalleryProps) {
                 ))}
              </div>
 
-            {selectedImage && (
+            {selectedIndex !== null && (
                 <ImageViewer
-                    images={selectedImage.images}
-                    alt={selectedImage.alt}
-                    onClose={() => setSelectedImage(null)}
+                    galleryItem={currentItem!}
+                    previousItem={previousItem}
+                    nextItem={nextItem}
+                    onClose={() => setSelectedIndex(null)}
+                    onPrevious={() => setSelectedIndex((i) =>
+                        i === null ? 0 : (i - 1 + gallery.length) % gallery.length
+                    )}
+                    onNext={() => setSelectedIndex((i) =>
+                        i === null ? 0 : (i + 1) % gallery.length
+                    )}
                 />
             )}
         </section>

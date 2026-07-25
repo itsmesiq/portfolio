@@ -64,6 +64,7 @@ export const cases: Case[] = [
         ],
         gallery: [
             {
+                title: 'Home',
                 thumb: '/img/cases/coach/thumb/thumb1.webp',
                 alt: 'Home Coach - Imagem do projeto Coach',
                 images: [
@@ -73,6 +74,7 @@ export const cases: Case[] = [
                 ]
             },
             {
+                title: 'PDP',
                 thumb: '/img/cases/coach/thumb/thumb2.webp',
                 alt: 'PDP Coach - Imagem do projeto Coach',
                 images: [
@@ -82,6 +84,7 @@ export const cases: Case[] = [
                 ]
             },
             {
+                title: 'PLP Nolita',
                 thumb: '/img/cases/coach/thumb/thumb3.webp',
                 alt: 'PLP Nolita Collection - Imagem do projeto Coach',
                 images: [
@@ -95,6 +98,7 @@ export const cases: Case[] = [
                 ]
             },
             {
+                title: 'PLP Teri',
                 thumb: '/img/cases/coach/thumb/thumb4.webp',
                 alt: 'PLP Teri Collection - Imagem do projeto Coach',
                 images: [

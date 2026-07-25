@@ -26,6 +26,7 @@ export { default as TailwindIcon } from "@/assets/icons/techstack/tailwind.svg";
 
 export { default as LogoDark } from "@/assets/logo-darkmode.svg";
 export { default as LogoLight } from "@/assets/logo-lightmode.svg";
+export { default as SiqIcon } from "@/assets/icons/siq-icon.svg";
 
 export { default as CoachLogo } from "@/assets/companies/coach.svg";
 export { default as WakeLogo } from "@/assets/companies/wake.svg";
@@ -40,6 +41,7 @@ export { default as MenuIcon } from "@/assets/icons/hamburger-menu.svg";
 export { default as CloseIcon } from "@/assets/icons/close-icon.svg";
 
 export { default as BackArrow } from "@/assets/icons/back-arrow.svg";
+export { default as ForwardArrow } from "@/assets/icons/next-arrow.svg";
 
 export { default as LayersIcon } from "@/assets/icons/layers.svg";
 export { default as LayoutIcon } from "@/assets/icons/grid.svg";

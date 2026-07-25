@@ -21,6 +21,7 @@ export type Case ={
     contribution: string[];
     scope: string[];
     gallery: {
+        title: string;
         thumb: string;
         alt: string;
         images: string[];
