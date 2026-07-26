@@ -42,7 +42,7 @@ export default async function CasePage({ params }: Props) {
                 <HeroCases project={project} />
                 <Highlights project={project} />
                 <ProjectDescription project={project} />
-                <MyProcess />
+                <MyProcess color={project.color} />
                 <Gallery gallery={project.gallery} />
                 <BottomNav previousCase={previousCase} nextCase={nextCase} />
                 <Contact />
