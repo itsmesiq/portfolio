@@ -37,14 +37,14 @@ export default function HeroCases({ project }: CaseProps) {
                         <span className="text-xs font-medium text-foreground">{project.credits}</span>
                     </div>
                 </div>
-                <div className="overflow-hidden flex justify-center -ml-20 sm:ml-0 lg:justify-start lg:-mr-10 xl:mr-0">
+                <div className="overflow-hidden flex justify-center -ml-6 sm:ml-0 lg:justify-start lg:-mr-10 xl:mr-0">
                     <Image
                         src={project.preview}
                         alt={project.title}
                         width={1500}
                         height={841}
                         loading="eager"
-                        className="h-auto w-120 max-w-none sm:w-150 sm:h-auto md:w-180 md:h-auto xl:w-250 xl:h-auto object-cover"
+                        className="h-auto w-100 max-w-none sm:w-150 sm:h-auto md:w-180 md:h-auto xl:w-250 xl:h-auto object-cover"
                     />
                 </div> 
             </div>
