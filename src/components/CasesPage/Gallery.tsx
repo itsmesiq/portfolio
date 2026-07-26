@@ -18,10 +18,10 @@ export function Gallery({ gallery }: GalleryProps) {
     const nextItem = gallery[(selectedIndex! + 1) % gallery.length];
 
     return (
-        <section className="w-full mb-22">
+        <section className="w-full mb-16 md:mb-22">
              <div className="grid grid-cols-1 md:grid-cols-2">
                 {gallery.map((galleryItem, index) => (
-                <div key={index} className="w-full h-[clamp(548px,50vw,620px)] overflow-hidden shrink-0 cursor-zoom-in" onClick={() => setSelectedIndex(index)}>
+                <div key={index} className="w-full h-auto overflow-hidden shrink-0 cursor-zoom-in" onClick={() => setSelectedIndex(index)}>
                     <Image
                         src={galleryItem.thumb}
                         alt={galleryItem.alt}

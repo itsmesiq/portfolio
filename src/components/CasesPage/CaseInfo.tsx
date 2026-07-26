@@ -87,7 +87,7 @@ export function ProjectDescription({ project }: CaseProps) {
 
 export function MyProcess({ color }: ProcessProps) {
     return (
-        <section className="w-full mb-22 px-4 sm:px-10 md:px-6 lg:px-10 xl:px-16">
+        <section className="w-full mb-16 lg:mb-22 px-4 sm:px-10 md:px-6 lg:px-10 xl:px-16">
             <GlassCard className="py-6 px-6 md:py-5 md:px-5 lg:py-6 lg:px-8 xl:py-8 xl:px-16">
                 <div className="flex flex-col items-center md:flex-row md:items-start md:justify-center gap-6 lg:gap-8 xl:gap-20">
                     <h2 className="font-heading text-lg md:text-sm font-bold w-full text-center md:text-left lg:text-base xl:text-xl md:w-[12%] xl:w-[12%] ">Meu Processo</h2>
