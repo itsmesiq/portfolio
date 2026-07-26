@@ -90,8 +90,8 @@ export function MyProcess({ color }: ProcessProps) {
         <section className="w-full mb-22 px-4 sm:px-10 md:px-6 lg:px-10 xl:px-16">
             <GlassCard className="py-6 px-6 md:py-5 md:px-5 lg:py-6 lg:px-8 xl:py-8 xl:px-16">
                 <div className="flex flex-col items-center md:flex-row md:items-start md:justify-center gap-6 lg:gap-8 xl:gap-20">
-                    <h2 className="font-heading text-lg md:text-sm font-bold w-full text-center md:text-left lg:text-base xl:text-xl md:w-[12%] md:w-[15%] xl:w-[12%] ">Meu Processo</h2>
-                    <div className="flex flex-wrap justify-center gap-10 sm:gap-0 sm:justify-between items-start w-full md:w-[88%] md:w-[85%] xl:w-[88%] ">
+                    <h2 className="font-heading text-lg md:text-sm font-bold w-full text-center md:text-left lg:text-base xl:text-xl md:w-[12%] xl:w-[12%] ">Meu Processo</h2>
+                    <div className="flex flex-wrap justify-center gap-10 sm:gap-0 sm:justify-between items-start w-full md:w-[88%] xl:w-[88%] ">
                         <div className="max-w-15 md:max-w-20.75 flex flex-col items-center gap-3">
                             <ProcessResearchIcon className="size-12" />
                             <h3 className="font-sans text-xs xl:text-sm text-muted font-light text-center">Pesquisa e Análise</h3>
