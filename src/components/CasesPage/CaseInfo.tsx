@@ -14,7 +14,7 @@ type ProcessProps ={
 export function Highlights({ project }: CaseProps) {
     return (
         <section className="w-full mb-8 px-4 sm:px-10 md:px-6 lg:px-10 xl:px-16">
-            <GlassCard className="px-4 py-6 md:px-6 lg:px-8 xl:py-8 xl:px-16">
+            <GlassCard className="px-4 py-6 md:px-6 lg:px-8 xl:px-10 xl:py-8 2xl:px-16">
                 <div className="grid grid-cols-2 justify-between gap-y-10 md:grid-cols-[auto_4px_auto_4px_auto_4px_auto]">
                     {project.highlights.map((highlight, index) => (
                         <Fragment key={index}>
@@ -23,8 +23,8 @@ export function Highlights({ project }: CaseProps) {
                                     <highlight.icon className="size-12 md:size-8 xl:size-12" style={{ color: project.color }} />
                                 </div>
                                 <div className="flex flex-col items-center lg:items-start">
-                                    <span className="font-sans font-bold text-xl md:text-lg xl:text-xl" style={{ color: project.color }}>{highlight.title}</span>
-                                    <p className="text-foreground font-normal text-sm md:text-xs xl:text-sm">{highlight.subtitle}</p>
+                                    <span className="font-heading font-bold text-xl md:text-lg xl:text-xl" style={{ color: project.color }}>{highlight.title}</span>
+                                    <p className="font-sans text-foreground font-normal text-sm md:text-xs xl:text-sm">{highlight.subtitle}</p>
                                 </div>
                             </div>
 
@@ -42,17 +42,17 @@ export function Highlights({ project }: CaseProps) {
 export function ProjectDescription({ project }: CaseProps) {
     return (
         <section className="w-full mb-8 px-4 sm:px-10 md:px-6 lg:px-10 xl:px-16">
-            <GlassCard className="px-6 py-6 md:py-5 md:px-5 lg:py-6 lg:px-8 xl:py-8 xl:px-16">
-                <div className="flex flex-col gap-6 md:gap-0 md:flex-row md:justify-between items-start">
-                    <div className="max-w-none md:max-w-45 lg:max-w-56.25 xl:max-w-70">
+            <GlassCard className="px-6 py-6 md:py-5 md:px-5 lg:py-6 lg:px-8 xl:px-10 xl:py-8 2xl:px-16">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 justify-between lg:grid-cols-[auto_4px_auto_4px_auto]">
+                    <div className="md:col-span-2 lg:col-span-1">
                         <div className="flex items-center gap-2 font-heading font-bold mb-2 lg:mb-4">
                             <ChallengeIcon className="size-6 md:size-4 lg:size-5 xl:size-6" style={{ color: project.color }} alt="Desafio Icon" />
                             <h2 className="text-lg md:text-sm lg:text-base xl:text-xl">Desafio</h2>
                         </div>
-                        <p className="font-sans text-muted font-light text-sm md:text-xs xl:text-sm">{project.challenge}</p>
+                        <p className="lg:max-w-62.5 2xl:max-w-90 font-sans text-muted font-light text-sm md:text-xs xl:text-sm">{project.challenge}</p>
                     </div>
-                    <div className="w-full h-0.5 md:h-auto md:w-0.5 self-stretch" style={{ backgroundColor: project.color }}></div>
-                    <div className="max-w-none md:max-w-50 lg:max-w-85">
+                    <div className="hidden lg:block w-0.5 self-stretch" style={{ backgroundColor: project.color }}></div>
+                    <div className="">
                         <div className="flex items-center gap-2 font-heading font-bold mb-2 lg:mb-4">
                             <ContributionIcon className="size-6 md:size-4 lg:size-5 xl:size-6" style={{ color: project.color }} alt="Minha Contribuição Icon" />
                             <h2 className="text-lg md:text-sm lg:text-base xl:text-xl">Minha Contribuição</h2>
@@ -65,8 +65,8 @@ export function ProjectDescription({ project }: CaseProps) {
                             ))}
                         </ul>
                     </div>
-                    <div className="w-full h-0.5 md:h-auto md:w-0.5 self-stretch" style={{ backgroundColor: project.color }}></div>
-                     <div className="max-w-none md:max-w-50 lg:max-w-95">
+                    <div className="hidden lg:block w-0.5 self-stretch" style={{ backgroundColor: project.color }}></div>
+                    <div className="">
                         <div className="flex items-center gap-2 font-heading font-bold mb-2 lg:mb-4">
                             <ScopeIcon className="size-6 md:size-4 lg:size-5 xl:size-6" style={{ color: project.color }} alt="Escopo do Projeto Icon" />
                             <h2 className="text-lg md:text-sm lg:text-base xl:text-xl">Escopo do Projeto</h2>
@@ -88,8 +88,8 @@ export function ProjectDescription({ project }: CaseProps) {
 export function MyProcess({ color }: ProcessProps) {
     return (
         <section className="w-full mb-16 lg:mb-22 px-4 sm:px-10 md:px-6 lg:px-10 xl:px-16">
-            <GlassCard className="py-6 px-6 md:py-5 md:px-5 lg:py-6 lg:px-8 xl:py-8 xl:px-16">
-                <div className="flex flex-col items-center md:flex-row md:items-start md:justify-center gap-6 lg:gap-8 xl:gap-20">
+            <GlassCard className="py-6 px-6 md:py-5 md:px-5 lg:py-6 lg:px-8 xl:px-10 xl:py-8 2xl:px-16">
+                <div className="flex flex-col items-center md:flex-row md:items-start md:justify-center gap-6 lg:gap-8 xl:gap-16">
                     <h2 className="font-heading text-lg md:text-sm font-bold w-full text-center md:text-left lg:text-base xl:text-xl md:w-[12%] xl:w-[12%] ">Meu Processo</h2>
                     <div className="flex flex-wrap justify-center gap-10 sm:gap-0 sm:justify-between items-start w-full md:w-[88%] xl:w-[88%] ">
                         <div className="max-w-15 md:max-w-20.75 flex flex-col items-center gap-3">
@@ -112,7 +112,7 @@ export function MyProcess({ color }: ProcessProps) {
                             <h3 className="font-sans text-xs xl:text-sm text-muted font-light text-center">Prototipação</h3>
                         </div>
                         <div className="hidden sm:block w-1 h-1 rounded-full my-5.5" style={{ backgroundColor: color }}></div>
-                        <div className="max-w-25 flex flex-col items-center gap-3">
+                        <div className="max-w-25 xl:max-w-30 flex flex-col items-center gap-3">
                             <ProcessHandoff className="size-12" />
                             <h3 className="font-sans text-xs xl:text-sm text-muted font-light text-center">Handoff para desenvolvimento</h3>
                         </div>                                                                                            
