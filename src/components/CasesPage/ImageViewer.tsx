@@ -48,7 +48,7 @@ export default function ImageViewer({ galleryItem, previousItem, nextItem, onClo
     }, [onClose]);
 
     return (
-        <div onClick={onClose} className="fixed inset-0 z-50 bg-background/70 backdrop-blur-sm flex items-center justify-center p-8">
+        <div onClick={onClose} className="fixed inset-0 z-50 bg-background/70 backdrop-blur-sm flex items-center justify-center p-6 sm:p-8">
             <div className="relative">
                 <div onClick={(e) => e.stopPropagation()} className="image-viewer-scroll pr-2 w-[90vw] h-[90vh] overflow-y-auto">
                     <div className="flex flex-col">
