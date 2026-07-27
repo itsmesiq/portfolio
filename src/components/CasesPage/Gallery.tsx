@@ -3,6 +3,7 @@ import React from "react";
 import type { Case } from "@/types/case.type";
 import Image from "next/image";
 import ImageViewer from "./ImageViewer";
+import { GalleryCarousel } from "./GalleryCarousel";
 
 type GalleryProps = {
     gallery: Case["gallery"];
@@ -19,20 +20,23 @@ export function Gallery({ gallery }: GalleryProps) {
 
     return (
         <section className="w-full mb-16 md:mb-22">
-             <div className="grid grid-cols-1 md:grid-cols-2">
-                {gallery.map((galleryItem, index) => (
-                <div key={index} className="w-full h-auto overflow-hidden shrink-0 cursor-zoom-in" onClick={() => setSelectedIndex(index)}>
-                    <Image
-                        src={galleryItem.thumb}
-                        alt={galleryItem.alt}
-                        width={1440}
-                        height={1200}
-                        loading="eager"
-                        className="object-cover object-top"
-                    />
-                </div>
-                ))}
-             </div>
+            <div className="md:hidden">
+                <GalleryCarousel gallery={gallery} onSelect={(index) => setSelectedIndex(index)} />
+            </div>
+            <div className="hidden md:grid md:grid-cols-2">
+               {gallery.map((galleryItem, index) => (
+               <div key={index} className="w-full h-auto overflow-hidden shrink-0 cursor-zoom-in" onClick={() => setSelectedIndex(index)}>
+                   <Image
+                       src={galleryItem.thumb}
+                       alt={galleryItem.alt}
+                       width={1440}
+                       height={1200}
+                       loading="eager"
+                       className="object-cover object-top"
+                   />
+               </div>
+               ))}
+            </div>
 
             {selectedIndex !== null && (
                 <ImageViewer
