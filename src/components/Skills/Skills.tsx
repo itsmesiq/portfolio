@@ -35,7 +35,7 @@ export default function Skills() {
     }, [emblaApi]);
 
     return (
-        <section id="skills" className="w-full my-22">
+        <section id="skills" className="w-full my-22 scroll-mt-35">
             <div className="font-heading mb-6 flex flex-col items-center gap-0">
                 <span className="text-xl font-normal text-accent">Expertise</span>
                 <h2 className="text-3xl font-semibold text-foreground text-center">Design & Desenvolvimento</h2>

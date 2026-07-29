@@ -1,15 +1,15 @@
 export const menuItens = [
     {
         label: 'Sobre Mim',
-        href: '#about',
+        href: '/#about',
     },
     {
         label: 'Cases',
-        href: '#cases',
+        href: '/#cases',
     },
     {
         label: 'Skills',
-        href: '#skills',
+        href: '/#skills',
     },
     {
         label: 'Contato',
