@@ -27,7 +27,7 @@ export default function HeroCases({ project }: CaseProps) {
                         <div className="flex flex-col gap-6">                       
                             <project.logo.svg className={project.logo.size} />
                             <div className="flex gap-3 font-heading text-foreground text-sm font-light max-w-104.5">
-                                <div className={'w-1'} style={{ backgroundColor: project.color }}></div>
+                                <div className={'w-1'} style={{ backgroundColor: project.primary }}></div>
                                 <p>{project.subtitle}</p>
                             </div>
                         </div>

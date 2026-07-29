@@ -5,7 +5,9 @@ export const cases: Case[] = [
     {
         slug: 'coach',
         title: 'Coach',
-        color: '#EABFAC',
+        primary: '#EABFAC',
+        secondary: '',
+        terciary: '',
         logo: {
             svg: CoachLogo,
             size: 'w-104.5 h-12',
@@ -124,7 +126,9 @@ export const cases: Case[] = [
     {
         slug: 'wake',
         title: 'Wake',
-        color: '#C405F2',
+        primary: '#C405F2',
+        secondary: '#EE9BF7',
+        terciary: '#BF9DE9',
         logo: {
             svg: WakeLogo,
             size: 'w-53 h-15',
@@ -246,7 +250,9 @@ export const cases: Case[] = [
     {
         slug: 'shop2gether',
         title: 'Shop2Gether',
-        color: '#EABFAC',
+        primary: '#EABFAC',
+        secondary: '#000000',
+        terciary: '#FFFFFF',
         logo: {
             svg: Shop2GetherLogo,
             size: 'w-104.5 h-12',
@@ -366,7 +372,9 @@ export const cases: Case[] = [
     {
         slug: 'casa-almeida',
         title: 'Casa Almeida',
-        color: '#C405F2',
+        primary: '#C405F2',
+        secondary: '#000000',
+        terciary: '#FFFFFF',
         logo: {
             svg: CasaAlmeidaLogo,
             size: 'w-104.5 h-12',

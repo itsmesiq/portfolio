@@ -3,7 +3,9 @@ import { ComponentType, SVGProps } from "react";
 export type Case ={
     slug: string;
     title: string;
-    color: string;
+    primary: string;
+    secondary: string;
+    terciary: string;
     logo: {
         svg: ComponentType<SVGProps<SVGSVGElement>>;
         size: string;
