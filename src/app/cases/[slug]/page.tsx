@@ -34,7 +34,7 @@ export default async function CasePage({ params }: Props) {
     return (
         <div className="relative flex flex-col flex-1 items-center overflow-x-hidden bg-background">
             <div className="absolute top-0 left-0 w-full h-225 pointer-events-none z-0">
-                <BackgroundGlow />
+                <BackgroundGlow primary={project.primary} secondary={project.secondary} terciary={project.terciary} />
             </div>
 
             <main className="z-10 w-full flex flex-col flex-1 items-center">
@@ -42,7 +42,7 @@ export default async function CasePage({ params }: Props) {
                 <HeroCases project={project} />
                 <Highlights project={project} />
                 <ProjectDescription project={project} />
-                <MyProcess color={project.color} />
+                <MyProcess primary={project.primary} />
                 <Gallery gallery={project.gallery} />
                 <BottomNav previousCase={previousCase} nextCase={nextCase} />
                 <Contact />
