@@ -27,6 +27,7 @@ export type Case ={
     gallery: {
         title: string;
         thumb: string;
+        thumbMobile: string;
         alt: string;
         images: string[];
     }[];

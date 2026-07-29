@@ -70,6 +70,7 @@ export const cases: Case[] = [
             {
                 title: 'Home',
                 thumb: '/img/cases/coach/thumb/thumb1.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb1mobile.webp',
                 alt: 'Home Coach - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/home1.webp',
@@ -80,6 +81,7 @@ export const cases: Case[] = [
             {
                 title: 'PDP',
                 thumb: '/img/cases/coach/thumb/thumb2.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb2mobile.webp',
                 alt: 'PDP Coach - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/pdp1.webp',
@@ -90,6 +92,7 @@ export const cases: Case[] = [
             {
                 title: 'PLP Nolita',
                 thumb: '/img/cases/coach/thumb/thumb3.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb3mobile.webp',
                 alt: 'PLP Nolita Collection - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/nolita1.webp',
@@ -104,6 +107,7 @@ export const cases: Case[] = [
             {
                 title: 'PLP Teri',
                 thumb: '/img/cases/coach/thumb/thumb4.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb4mobile.webp',
                 alt: 'PLP Teri Collection - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/teri1.webp',
@@ -194,6 +198,7 @@ export const cases: Case[] = [
             {
                 title: 'Compre o Look',
                 thumb: '/img/cases/wake/thumb/thumb1.webp',
+                thumbMobile: '/img/cases/wake/thumb/thumb1mobile.webp',
                 alt: 'PDP Compre o Look - Imagem do projeto Wake',
                 images: [
                     '/img/cases/wake/look1.webp',
@@ -204,6 +209,7 @@ export const cases: Case[] = [
             {
                 title: 'PDP V1',
                 thumb: '/img/cases/wake/thumb/thumb2.webp',
+                thumbMobile: '/img/cases/wake/thumb/thumb2mobile.webp',
                 alt: 'PDP V1 - Imagem do projeto Wake',
                 images: [
                     '/img/cases/wake/v1pdp1.webp',
@@ -215,6 +221,7 @@ export const cases: Case[] = [
             {
                 title: 'Wake Summit 2024',
                 thumb: '/img/cases/wake/thumb/thumb3.webp',
+                thumbMobile: '/img/cases/wake/thumb/thumb3mobile.webp',
                 alt: 'Landing Page Wake Summit2024 - Imagem do projeto Wake',
                 images: [
                     '/img/cases/wake/summit1.webp',
@@ -226,6 +233,7 @@ export const cases: Case[] = [
             {
                 title: 'PDP V2',
                 thumb: '/img/cases/wake/thumb/thumb4.webp',
+                thumbMobile: '/img/cases/wake/thumb/thumb4mobile.webp',
                 alt: 'PDP V2 - Imagem do projeto Wake',
                 images: [
                     '/img/cases/wake/v2pdp1.webp',
@@ -304,6 +312,7 @@ export const cases: Case[] = [
             {
                 title: 'Home',
                 thumb: '/img/cases/coach/thumb/thumb1.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb1mobile.webp',
                 alt: 'Home Coach - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/home1.webp',
@@ -314,6 +323,7 @@ export const cases: Case[] = [
             {
                 title: 'PDP',
                 thumb: '/img/cases/coach/thumb/thumb2.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb2mobile.webp',
                 alt: 'PDP Coach - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/pdp1.webp',
@@ -324,6 +334,7 @@ export const cases: Case[] = [
             {
                 title: 'PLP Nolita',
                 thumb: '/img/cases/coach/thumb/thumb3.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb3mobile.webp',
                 alt: 'PLP Nolita Collection - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/nolita1.webp',
@@ -338,6 +349,7 @@ export const cases: Case[] = [
             {
                 title: 'PLP Teri',
                 thumb: '/img/cases/coach/thumb/thumb4.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb4mobile.webp',
                 alt: 'PLP Teri Collection - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/teri1.webp',
@@ -420,6 +432,7 @@ export const cases: Case[] = [
             {
                 title: 'Home',
                 thumb: '/img/cases/coach/thumb/thumb1.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb1mobile.webp',
                 alt: 'Home Coach - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/home1.webp',
@@ -430,6 +443,7 @@ export const cases: Case[] = [
             {
                 title: 'PDP',
                 thumb: '/img/cases/coach/thumb/thumb2.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb2mobile.webp',
                 alt: 'PDP Coach - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/pdp1.webp',
@@ -440,6 +454,7 @@ export const cases: Case[] = [
             {
                 title: 'PLP Nolita',
                 thumb: '/img/cases/coach/thumb/thumb3.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb3mobile.webp',
                 alt: 'PLP Nolita Collection - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/nolita1.webp',
@@ -454,6 +469,7 @@ export const cases: Case[] = [
             {
                 title: 'PLP Teri',
                 thumb: '/img/cases/coach/thumb/thumb4.webp',
+                thumbMobile: '/img/cases/coach/thumb/thumb4mobile.webp',
                 alt: 'PLP Teri Collection - Imagem do projeto Coach',
                 images: [
                     '/img/cases/coach/teri1.webp',

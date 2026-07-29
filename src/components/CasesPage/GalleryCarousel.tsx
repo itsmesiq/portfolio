@@ -47,9 +47,9 @@ export function GalleryCarousel({ gallery, onSelect }: GalleryCarouselProps) {
             <div ref={emblaRef} className="overflow-hidden">
                 <div className="grid grid-flow-col auto-cols-[100%]">
                     {gallery.map((galleryItem, index) => (
-                        <div key={index} className="w-full h-auto shrink-0 cursor-zoom-in" onClick={() => onSelect(index)}>
+                        <div key={index} className="w-full h-125 shrink-0 cursor-zoom-in" onClick={() => onSelect(index)}>
                             <Image
-                                src={galleryItem.thumb}
+                                src={galleryItem.thumbMobile}
                                 alt={galleryItem.alt}
                                 width={1440}
                                 height={1200}
