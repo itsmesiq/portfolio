@@ -29,6 +29,15 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                             <Link href={item.href} className="text-foreground hover:text-primary transition-colors duration-500" onClick={onClose}>
                                 {item.label}
                             </Link>
+                            {item.children && (
+                                <div className="mt-4 flex flex-col gap-2 pl-4">
+                                    {item.children.map((child, index) => (
+                                        <Link key={index} href={child.href} className="text-sm text-foreground block py-2.5 " onClick={onClose}>
+                                            {child.label}
+                                        </Link>
+                                    ))}
+                                </div>
+                            )}
                         </li>
                     ))}
                 </ul>

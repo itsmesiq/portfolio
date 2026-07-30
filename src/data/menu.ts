@@ -15,7 +15,7 @@ export const menuItens = [
             },
             {
                 label: 'Shop2Gether',
-                href: 'shop2gether',
+                href: '/cases/shop2gether',
             },
             {
                 label: 'Casa Almeida',
