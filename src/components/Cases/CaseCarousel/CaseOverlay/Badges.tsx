@@ -1,7 +1,7 @@
-import type { Project } from "@/types/project.type";
+import type { Case } from "@/types/case.type";
 
 type BadgesProps = {
-    project: Project;
+    project: Case;
     index: number;
 };
 

@@ -39,7 +39,7 @@ export default function HeroCases({ project }: CaseProps) {
                 </div>
                 <div className="overflow-hidden flex justify-center -ml-6 sm:ml-0 lg:justify-start lg:-mr-10 xl:mr-0">
                     <Image
-                        src={project.preview}
+                        src={project.mockup}
                         alt={project.title}
                         width={1500}
                         height={841}

@@ -33,7 +33,7 @@ export default function Header() {
             <DesktopNav />
             <motion.div className="flex items-center justify-center"
                 whileHover={{ scale: 1.05, transition: { duration: 0.4 } }}>
-                <Link href="//#region ">
+                <Link href="/">
                     <Logo />
                 </Link>
             </motion.div>

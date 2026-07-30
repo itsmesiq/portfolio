@@ -3,30 +3,6 @@ import { CoachLogo, WakeLogo, Shop2GetherLogo, CasaAlmeidaLogo } from "@/compone
 
 export const cases: Project[] = [
     {
-        slug: 'coach',
-        logo: {
-            svg: CoachLogo,
-            classname: "w-[279px] h-[32px]"
-        },
-        preview: '/img/cases/preview/coachpreview.jpg',
-        href: '/cases/coach',
-        title: 'Coach Brasil',
-        credits: 'Projeto desenvolvido associado à Agência Oásis',
-        tags: ['UX/UI Design', 'E-Commerce', 'Wake'],
-        full: {
-            description: 'Projeto de migração do e-commerce da Coach Brasil para a plataforma Wake, com foco em criar uma experiência moderna, responsiva e consistente. O principal desafio foi equilibrar as diretrizes do design global da marca com as expectativas e o comportamento do consumidor brasileiro, adaptando a experiência sem perder a identidade visual da Coach.',
-            highlight: '+40 telas desenvolvidas entre Desktop e Mobile',
-            contribution: ['UI Design', 'Design Responsivo (Desktop e Mobile)', 'Design System no Figma', 'Prototipação de interfaces', 'Arquitetura de componentes', 'Colaboração com o time de desenvolvimento'],
-            text: 'Desenvolvimento completo da interface do e-commerce, incluindo:',
-            scope: ['Home', 'Páginas de categoria (PLP) com 6 variações', 'Página de Produto (PDP)', 'Área do Cliente (login, cadastro, pedidos, wishlist e demais funcionalidades)', 'Fluxo completo de Checkout, do carrinho à confirmação do pedido', 'Páginas institucionais e conteúdos personalizados da marca', 'Templates de e-mails transacionais para toda a jornada de compra'],
-            handoff: {
-                title: 'Design System e Handoff',
-                content: 'Criação de componentes reutilizáveis utilizando Auto Layout e Variants no Figma, garantindo consistência visual, escalabilidade e maior agilidade durante a evolução do projeto. Toda a interface foi estruturada com foco em componentização, responsividade e organização, facilitando o handoff e a implementação pela equipe de Front-end.'
-            },
-            images: ['/img/cases/coachfull.png', '/img/cases/coachfull2.png', '/img/cases/coachfull3.png', '/img/cases/coachfull4.png']            
-        }
-    },
-    {
         slug: 'wake',
         logo: {
             svg: WakeLogo,
@@ -81,6 +57,30 @@ export const cases: Project[] = [
             text: 'Desenvolvimento de uma nova experiência para o checkout e evolução de funcionalidades estratégicas do e-commerce, incluindo:',
             scope: ['Fluxo completo de checkout, do carrinho à confirmação do pedido', 'Processo de checkout simplificado', 'Cadastro rápido de clientes', 'Carrinho multiseller com agrupamento por entrega', 'Minicart e carrinho com vitrines de Cross Sell', 'Modal de produto adicionado ao carrinho com compra rápida (Compre o Look)', 'Funcionalidade para presentes, incluindo mensagem personalizada e opção de embalagem', 'Aviso automático de alteração de preço para produtos no carrinho', 'Reformulação da seleção de variações (cor e tamanho) na página de produto', 'Nova experiência para produtos esgotados, com sugestões de itens similares e opção Avise-me', 'Reformulação das avaliações de produtos, incluindo fotos, indicadores visuais e filtros de navegação', 'Lightbox promocional para captura de leads com oferta de cupom de desconto'],
             images: ['/img/cases/casaalmeidafull.png', '/img/cases/casaalmeidafull2.png', '/img/cases/casaalmeidafull3.png', '/img/cases/casaalmeidafull4.png']
+        }
+    },
+    {
+        slug: 'coach',
+        logo: {
+            svg: CoachLogo,
+            classname: "w-[279px] h-[32px]"
+        },
+        preview: '/img/cases/preview/coachpreview.jpg',
+        href: '/cases/coach',
+        title: 'Coach Brasil',
+        credits: 'Projeto desenvolvido associado à Agência Oásis',
+        tags: ['UX/UI Design', 'E-Commerce', 'Wake'],
+        full: {
+            description: 'Projeto de migração do e-commerce da Coach Brasil para a plataforma Wake, com foco em criar uma experiência moderna, responsiva e consistente. O principal desafio foi equilibrar as diretrizes do design global da marca com as expectativas e o comportamento do consumidor brasileiro, adaptando a experiência sem perder a identidade visual da Coach.',
+            highlight: '+40 telas desenvolvidas entre Desktop e Mobile',
+            contribution: ['UI Design', 'Design Responsivo (Desktop e Mobile)', 'Design System no Figma', 'Prototipação de interfaces', 'Arquitetura de componentes', 'Colaboração com o time de desenvolvimento'],
+            text: 'Desenvolvimento completo da interface do e-commerce, incluindo:',
+            scope: ['Home', 'Páginas de categoria (PLP) com 6 variações', 'Página de Produto (PDP)', 'Área do Cliente (login, cadastro, pedidos, wishlist e demais funcionalidades)', 'Fluxo completo de Checkout, do carrinho à confirmação do pedido', 'Páginas institucionais e conteúdos personalizados da marca', 'Templates de e-mails transacionais para toda a jornada de compra'],
+            handoff: {
+                title: 'Design System e Handoff',
+                content: 'Criação de componentes reutilizáveis utilizando Auto Layout e Variants no Figma, garantindo consistência visual, escalabilidade e maior agilidade durante a evolução do projeto. Toda a interface foi estruturada com foco em componentização, responsividade e organização, facilitando o handoff e a implementação pela equipe de Front-end.'
+            },
+            images: ['/img/cases/coachfull.png', '/img/cases/coachfull2.png', '/img/cases/coachfull3.png', '/img/cases/coachfull4.png']            
         }
     }
 ];

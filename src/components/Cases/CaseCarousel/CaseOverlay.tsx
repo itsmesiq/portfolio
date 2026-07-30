@@ -3,11 +3,11 @@ import { Badges } from "./CaseOverlay/Badges";
 import { Button } from "./CaseOverlay/Button";
 import { ProjectLogo } from "./CaseOverlay/ProjectLogo";
 import { Credits } from "./CaseOverlay/Credits";
-import { Project } from "@/types/project.type";
+import { Case } from "@/types/case.type";
 import { AnimatePresence, motion } from "motion/react";
 
 type CaseOverlayProps = {
-    currentProject: Project;
+    currentProject: Case;
     onNext: () => void;
     onPrevious: () => void;
     total: number;
@@ -30,9 +30,7 @@ export function CaseOverlay({ currentProject, currentIndex, onNext, onPrevious, 
                         >
                             <Badges project={currentProject} index={currentIndex} />
                             <div className="flex flex-col items-start gap-3">
-                                <div className="flex items-center h-10">
-                                    <ProjectLogo project={currentProject} index={currentIndex} />
-                                </div>
+                                <ProjectLogo project={currentProject} index={currentIndex} />
                                 <Credits project={currentProject} index={currentIndex} />
                             </div>
                         </motion.div>

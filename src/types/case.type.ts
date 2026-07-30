@@ -11,6 +11,7 @@ export type Case ={
         size: string;
     };
     client: string;
+    mockup: string;
     preview: string;
     tags: string[];
     subtitle: string;

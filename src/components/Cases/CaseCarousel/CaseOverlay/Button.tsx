@@ -1,8 +1,8 @@
 import { MoreIcon } from "@/components/icons";
-import type { Project } from "@/types/project.type";
+import type { Case } from "@/types/case.type";
 
 type ButtonProps = {
-    project: Project;
+    project: Case;
     index: number;
 };
 

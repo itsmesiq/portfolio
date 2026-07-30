@@ -1,6 +1,6 @@
 "use client";
 
-import { cases } from "@/data/projects";
+import { cases } from "@/data/cases";
 import { useEffect, useState } from "react";
 import { CaseImage } from "./CaseImage";
 import { CaseOverlay } from "./CaseOverlay";
