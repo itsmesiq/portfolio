@@ -18,22 +18,27 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://portfolio-itsmesiq.vercel.app"),
+
   title: "Ana Siqueira | UI Designer & Frontend Developer",
 
   description:
-    "Portfólio de Ana Siqueira, UI Designer e Frontend Developer especializada em e-commerce, interfaces digitais e experiências de alta conversão.",
+    "Portfólio de Ana Siqueira com projetos de UI Design e Front-end para e-commerce, interfaces responsivas, design systems e desenvolvimento com React e Next.js.",
 
   keywords: [
+    "Ana Siqueira",
     "UI Designer",
     "Frontend Developer",
     "React",
     "Next.js",
-    "Tailwind",
-    "UX",
+    "TypeScript",
+    "Tailwind CSS",
+    "UX/UI",
+    "Design System",
     "E-commerce",
-    "Portfolio",
     "Wake",
     "Figma",
+    "Portfolio",
   ],
 
   authors: [
@@ -44,17 +49,32 @@ export const metadata: Metadata = {
 
   creator: "Ana Siqueira",
 
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     title: "Ana Siqueira | UI Designer & Frontend Developer",
 
     description:
-      "Portfólio com projetos de UI Design, Frontend e E-commerce.",
+      "Projetos de UI Design, Front-end e e-commerce com foco em experiência, performance e interfaces responsivas.",
+
+    url: "https://portfolio-itsmesiq.vercel.app",
+
+    siteName: "Ana Siqueira Portfolio",
 
     type: "website",
 
-    images: "/img/og-image.png",
-
     locale: "pt_BR",
+
+    images: [
+      {
+        url: "/img/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Portfólio de Ana Siqueira",
+      },
+    ],
   },
 };
 
