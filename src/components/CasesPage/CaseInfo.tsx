@@ -93,27 +93,27 @@ export function MyProcess({ primary }: ProcessProps) {
                     <h2 className="font-heading text-lg md:text-sm font-bold w-full text-center md:text-left lg:text-base xl:text-xl md:w-[12%] xl:w-[12%] ">Meu Processo</h2>
                     <div className="flex flex-wrap justify-center gap-10 sm:gap-0 sm:justify-between items-start w-full md:w-[88%] xl:w-[88%] ">
                         <div className="max-w-15 md:max-w-20.75 flex flex-col items-center gap-3">
-                            <ProcessResearchIcon className="size-12" />
+                            <ProcessResearchIcon className="size-12 text-foreground" />
                             <h3 className="font-sans text-xs xl:text-sm text-muted font-light text-center">Pesquisa e Análise</h3>
                         </div>
                         <div className="hidden sm:block w-1 h-1 rounded-full my-5.5" style={{ backgroundColor: primary }}></div>
                         <div className="max-w-22 md:max-w-24.25 flex flex-col items-center gap-3">
-                            <ProcessArchitectureIcon className="size-12" />
+                            <ProcessArchitectureIcon className="size-12 text-foreground" />
                             <h3 className="font-sans text-xs xl:text-sm text-muted font-light text-center">Arquitetura da Informação</h3>
                         </div>
                         <div className="hidden sm:block w-1 h-1 rounded-full my-5.5" style={{ backgroundColor: primary }}></div>
                         <div className="max-w-15 md:max-w-20.25 flex flex-col items-center gap-3">
-                            <ProcessDesignIcon className="size-12" />
+                            <ProcessDesignIcon className="size-12 text-foreground" />
                             <h3 className="font-sans text-xs xl:text-sm text-muted font-light text-center">UI Design no Figma</h3>
                         </div>  
                         <div className="hidden sm:block w-1 h-1 rounded-full my-5.5" style={{ backgroundColor: primary }}></div>  
                         <div className="max-w-22.25 flex flex-col items-center gap-3">
-                            <ProcessPrototypeIcon className="size-12" />
+                            <ProcessPrototypeIcon className="size-12 text-foreground" />
                             <h3 className="font-sans text-xs xl:text-sm text-muted font-light text-center">Prototipação</h3>
                         </div>
                         <div className="hidden sm:block w-1 h-1 rounded-full my-5.5" style={{ backgroundColor: primary }}></div>
                         <div className="max-w-25 xl:max-w-30 flex flex-col items-center gap-3">
-                            <ProcessHandoff className="size-12" />
+                            <ProcessHandoff className="size-12 text-foreground" />
                             <h3 className="font-sans text-xs xl:text-sm text-muted font-light text-center">Handoff para desenvolvimento</h3>
                         </div>                                                                                            
                     </div>

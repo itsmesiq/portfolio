@@ -8,7 +8,7 @@ type SocialLinkProp = {
 export function SocialButton({ social }: SocialLinkProp) {
     return (
         <a href={social.href} target="_blank" rel="noopener noreferrer">
-            <div className="group w-full min-w-80 md:min-w-90 flex items-center justify-between py-5 px-5 bg-surface text-surface-foreground border border-transparent rounded-lg hover:bg-surface-hover hover:text-surface-foreground-hover hover:border-primary transition-all transition-discrete duration-500">
+            <div className="group w-full min-w-80 md:min-w-90 flex items-center justify-between py-5 px-5 bg-card text-surface-foreground border border-transparent rounded-lg hover:bg-surface-hover hover:text-surface-foreground-hover hover:border-primary transition-all transition-discrete duration-500">
                 <div className="flex gap-3 items-center">
                     {social.icon && <social.icon className="size-5 group-hover:text-primary" />}
                     <span>{social.label}</span>

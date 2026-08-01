@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #F1F1F1;
   --foreground: #000109;
@@ -15,6 +17,7 @@
   --primary-hover: #FEE400;
   --secondary-hover: rgba(0, 1, 9, 0.15);
   --accent: #AB7B00;
+  --gradient: linear-gradient(180deg, rgba(241, 241, 241, 0) 0%, #F1F1F1 100%);
 }
 
 .dark {
@@ -32,6 +35,7 @@
   --primary-hover: #FEE400;
   --secondary-hover: rgba(255, 255, 255, 0.15);
   --accent: #FEB600;
+  --gradient: linear-gradient(180deg, rgba(16, 16, 33, 0) 0%, #000109 100%);
 }
 
 @theme inline {
@@ -54,6 +58,12 @@
   --font-heading: var(--font-lexend);
 
   --breakpoint-1720: 107.5rem;
+}
+
+@layer utilities {
+  .bg-gradient {
+    background: var(--gradient);
+  }
 }
 
 html {

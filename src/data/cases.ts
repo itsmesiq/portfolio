@@ -405,9 +405,9 @@ export const cases: Case[] = [
     {
         slug: 'coach',
         title: 'Coach',
-        primary: '#EABFAC',
+        primary: '#D68D6E',
         secondary: '#CFA08C',
-        terciary: '#D68D6E',
+        terciary: '#EABFAC',
         logo: {
             svg: CoachLogo,
             size: 'w-[318px] h-[36px] sm:w-104.5 sm:h-12',

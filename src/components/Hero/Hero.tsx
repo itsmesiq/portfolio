@@ -6,6 +6,7 @@ import { socialMedia } from "@/data/social";
 import { SocialLink } from "../ui/SocialLink";
 import { DownloadIcon, DoubledownIcon } from "../icons";
 import { motion } from "motion/react";
+import { ThemeSwitch } from "../Theme/ThemeSwitch";
 
 export default function Hero() {
     const container = {
@@ -34,22 +35,72 @@ export default function Hero() {
                 <motion.div variants={container} initial="hidden" animate="show"  className="flex flex-col gap-3 px-4 py-4 max-w-90.25 sm:max-w-none sm:px-8 sm:py-8 xl:px-16 xl:py-16 rounded-2xl md:rounded-r-3xl md:rounded-l-none lg:rounded-r-[40px] bg-card 2xl:rounded-[40px] lg:max-w-133.5 xl:max-w-149.5">
                     <motion.div variants={item} className="md:w-117.5 pb-5">
                         <div className="w-full relative">
-                            <Image
-                                src="/img/hero/profile-banner.jpg"
-                                alt="Profile Banner"
-                                width={470}
-                                height={124}
-                                loading="eager"
-                                className="rounded-2xl w-82.25 h-auto sm:w-124 sm:h-auto md:w-117.5 md:h-auto"
+                            <ThemeSwitch
+                                light={
+                                    <Image
+                                        src="/img/hero/profile-banner-light.jpg"
+                                        alt="Profile Banner"
+                                        width={470}
+                                        height={124}
+                                        loading="eager"
+                                        className="hidden sm:block rounded-2xl w-82.25 h-auto sm:w-124 sm:h-auto md:w-117.5 md:h-auto"
+                                    />
+                                }
+                                dark={
+                                    <Image
+                                        src="/img/hero/profile-banner.jpg"
+                                        alt="Profile Banner"
+                                        width={470}
+                                        height={124}
+                                        loading="eager"
+                                        className="hidden sm:block rounded-2xl w-82.25 h-auto sm:w-124 sm:h-auto md:w-117.5 md:h-auto"
+                                    />
+                                }
                             />
-                            <Image
-                                src="/img/hero/profile.png"
-                                alt="Profile Picture"
-                                width={148}
-                                height={148}
-                                loading="eager"
-                                className="absolute w-28 h-auto sm:w-37 sm:h-auto -bottom-18 left-3"
+                            <ThemeSwitch
+                                light={
+                                    <Image
+                                        src="/img/hero/profile-banner-mobile-light.jpg"
+                                        alt="Profile Banner"
+                                        width={329}
+                                        height={124}
+                                        loading="eager"
+                                        className="block sm:hidden rounded-2xl w-82.25 h-auto sm:w-124 sm:h-auto md:w-117.5 md:h-auto"
+                                    />
+                                }
+                                dark={
+                                    <Image
+                                        src="/img/hero/profile-banner-mobile.png"
+                                        alt="Profile Banner"
+                                        width={329}
+                                        height={124}
+                                        loading="eager"
+                                        className="block sm:hidden rounded-2xl w-82.25 h-auto sm:w-124 sm:h-auto md:w-117.5 md:h-auto"
+                                    />
+                                }
                             />
+                            <ThemeSwitch
+                                light={
+                                    <Image
+                                        src="/img/hero/profilelight.png"
+                                        alt="Profile Picture"
+                                        width={148}
+                                        height={148}
+                                        loading="eager"
+                                        className="absolute w-28 h-auto sm:w-37 sm:h-auto -bottom-18 left-3"
+                                    />
+                                }
+                                dark={
+                                    <Image
+                                        src="/img/hero/profile.png"
+                                        alt="Profile Picture"
+                                        width={148}
+                                        height={148}
+                                        loading="eager"
+                                        className="absolute w-28 h-auto sm:w-37 sm:h-auto -bottom-18 left-3"
+                                    />
+                                }
+                            />                            
                         </div>
                         <div className="ml-33 sm:ml-44 flex flex-col gap-0 mt-3">
                             <span className="font-heading text-xl font-medium text-foreground">Ana Siqueira</span>
@@ -88,12 +139,25 @@ export default function Hero() {
                         y:{ duration: 5, repeat: Infinity },
                         scale:{ duration: 6, repeat: Infinity }
                         }}>
-                    <Image
-                        src="/img/hero/background.png"
-                        alt="Hero Image"
-                        width={1000}
-                        height={750}
-                        className="hidden sm:inline max-w-none md:w-241.25 md:h-181 2xl:w-250 2xl:h-187.5"
+                    <ThemeSwitch
+                        light={
+                            <Image
+                                src="/img/hero/backgroundlight.png"
+                                alt="Hero Image"
+                                width={1000}
+                                height={750}
+                                className="hidden sm:inline max-w-none md:w-241.25 md:h-181 2xl:w-250 2xl:h-187.5"
+                            />
+                        }
+                        dark={
+                            <Image
+                                src="/img/hero/background.png"
+                                alt="Hero Image"
+                                width={1000}
+                                height={750}
+                                className="hidden sm:inline max-w-none md:w-241.25 md:h-181 2xl:w-250 2xl:h-187.5"
+                            />
+                        }
                     />
                 </motion.div>
             </div>
@@ -104,7 +168,7 @@ export default function Hero() {
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}>
-                <DoubledownIcon className="size-14" />
+                <DoubledownIcon className="size-14 text-foreground" />
             </motion.div>
         </section>
     );
