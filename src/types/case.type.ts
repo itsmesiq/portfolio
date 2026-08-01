@@ -9,6 +9,7 @@ export type Case ={
     logo: {
         svg: ComponentType<SVGProps<SVGSVGElement>>;
         size: string;
+        featuredSize: string;
     };
     client: string;
     mockup: string;

@@ -26,7 +26,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 <ul role="menu" className="flex flex-col space-y-8 px-10">
                     {menuItens.map((item, index) => (
                         <li key={index} role='menuitem'>
-                            <Link href={item.href} className="text-foreground hover:text-primary transition-colors duration-500" onClick={onClose}>
+                            <Link href={item.href} className="text-foreground" onClick={onClose}>
                                 {item.label}
                             </Link>
                             {item.children && (

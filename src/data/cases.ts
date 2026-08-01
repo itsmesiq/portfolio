@@ -11,6 +11,7 @@ export const cases: Case[] = [
         logo: {
             svg: WakeLogo,
             size: 'w-53 h-15',
+            featuredSize: 'w-[80px] h-[22px] max-w-14.25 max-h-4 sm:max-w-20 sm:max-h-5.5',
         },
         client: 'Wake',
 
@@ -136,6 +137,7 @@ export const cases: Case[] = [
         logo: {
             svg: Shop2GetherLogo,
             size: 'w-104.5 h-12',
+            featuredSize: 'w-[150px] h-[17px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25',
         },
         client: 'Shop2Gether',
 
@@ -253,77 +255,88 @@ export const cases: Case[] = [
     {
         slug: 'casa-almeida',
         title: 'Casa Almeida',
-        primary: '#C405F2',
-        secondary: '#000000',
-        terciary: '#FFFFFF',
+        primary: '#D03F3C',
+        secondary: '#561D27',
+        terciary: '#301318',
         logo: {
             svg: CasaAlmeidaLogo,
-            size: 'w-104.5 h-12',
+            size: 'w-[318px] h-[36px] sm:w-104.5 sm:h-12',
+            featuredSize: 'w-[150px] h-[15px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25',
         },
         client: 'Casa Almeida',
 
-        mockup: '/img/cases/coach/mockup.png',
+        mockup: '/img/cases/casaalmeida/mockup.png',
         preview: '/img/cases/casaalmeida/preview.jpg',
 
         tags: [
             'UX/UI Design',
             'E-Commerce',
-            'Checkout',
+            'CRO',
             'Wake',
         ],
 
-        subtitle: 'Migração de e-commerce para Wake com foco em performance, usabilidade e experiência',
-        description: 'Projeto desenvolvido para a Coach Brasil com o objetivo de migrar sua loja para a plataforma Wake, modernizando a interface e otimizando a experiência de compra em todos os dispositivos',
+        subtitle: 'Migração e evolução da experiência de compra da Casa Almeida para a plataforma Wake.',
+        description: 'Projeto de migração do e-commerce da Casa Almeida para a plataforma Wake, preservando elementos já consolidados da experiência da marca e incorporando novas funcionalidades ao longo da jornada de compra. O trabalho envolveu análise do comportamento dos usuários, evolução de interfaces e criação de novas soluções para descoberta de produtos, personalização e checkout.',
         credits: 'Projeto desenvolvido associado à Agencia Oasis',
 
         highlights: [
             {
                 icon: LayersIcon,
-                title: '40+',
-                subtitle: 'Telas desenvolvidas',
+                title: 'UX & CRO',
+                subtitle: 'Análise de Comportamento',
                 width: 'w-[97px]',
             },
             {
                 icon: LayoutIcon,
-                title: '6',
-                subtitle: 'PLPs otimizadas',
+                title: 'Product Discovery',
+                subtitle: 'Vitrines e Recomendações',
                 width: 'w-[97px]',
             },
             {
                 icon: DevicesIcon,
                 title: 'Responsivo',
-                subtitle: 'Layout desktop e mobile',
+                subtitle: 'Desktop e Mobile',
                 width: 'w-[134px]',
             },
             {
                 icon: ShoppingBagIcon,
                 title: 'Wake Platform',
-                subtitle: 'E-commerce headless',
+                subtitle: 'Migração de Plataforma',
                 width: 'w-[170px]',
             },
         ],
-        challenge: 'Migrar o e-commerce da Coach Brasil para a plataforma Wake, mantendo a identidade da marca e melhorando a performance e a usabilidade do site. Além disso, era necessário adaptar componentes e fluxos para o público brasileiro.',
+        challenge: 'Migrar uma operação de e-commerce já consolidada para a plataforma Wake sem descaracterizar a experiência que os clientes da Casa Almeida já conheciam. A partir da análise do site existente e do comportamento dos usuários, o projeto buscou preservar padrões relevantes, solucionar pontos de atrito e explorar as possibilidades da nova plataforma para criar uma jornada de compra mais intuitiva e completa.',
         contribution: [
-            'UI Design',
-            'Design Responsivo (Desktop e Mobile)',
-            'Design System no Figma',
-            'Prototipação de interfaces',
-            'Arquitetura de componentes',
-            'Colaboração com o time de desenvolvimento',
+            'UX/UI Design Responsivo (Desktop e Mobile)',
+            'Análise de Comportamento e Heatmaps',
+            'Evolução da Jornada de Compra',
+            'Design de Novas Funcionalidades',
+            'Prototipação de Interfaces',
+            'Aplicação e Evolução de Componentes',
+            'Fluxos de Autenticação e Área do Cliente',
+            'Checkout e Pós-compra',
+            'Colaboração com Desenvolvimento',
         ],
         scope: [
-            'Páginas de categoria (PLP) com 6 variações',
+            'Home e Vitrines de Produtos',
+            'Página de Categoria (PLP)',
             'Página de Produto (PDP)',
-            'Área do Cliente',
-            'Fluxo completo de Checkout',
-            'Páginas institucionais e conteúdos personalizados',
+            'Compre Junto',
+            'Personalização de Produtos',
+            'Barra de Compra Fixa na PDP',
+            'Minicart e Minicart Vazio',
+            'Banners Interativos e Vitrines Laterais',
+            'Cards de Categorias e Produtos',
+            'Landing Page Buddemeyer Luxus',
+            'Área do Cliente e Pós-compra',
+            'Fluxo Completo de Checkout',
         ],
         gallery: [
             {
-                title: 'Home',
-                thumb: '/img/cases/coach/thumb/thumb1.webp',
-                thumbMobile: '/img/cases/coach/thumb/thumb1mobile.webp',
-                alt: 'Home Coach - Imagem do projeto Coach',
+                title: 'PDP',
+                thumb: '/img/cases/casaalmeida/thumb/thumb1.webp',
+                thumbMobile: '/img/cases/casaalmeida/thumb/thumb1mobile.webp',
+                alt: 'PDP & Experiência de Produto',
                 images: [
                     '/img/cases/coach/home1.webp',
                     '/img/cases/coach/home2.webp',
@@ -331,10 +344,10 @@ export const cases: Case[] = [
                 ]
             },
             {
-                title: 'PDP',
-                thumb: '/img/cases/coach/thumb/thumb2.webp',
-                thumbMobile: '/img/cases/coach/thumb/thumb2mobile.webp',
-                alt: 'PDP Coach - Imagem do projeto Coach',
+                title: 'Luxus',
+                thumb: '/img/cases/casaalmeida/thumb/thumb2.webp',
+                thumbMobile: '/img/cases/casaalmeida/thumb/thumb2mobile.webp',
+                alt: 'Buddemeyer Luxus',
                 images: [
                     '/img/cases/coach/pdp1.webp',
                     '/img/cases/coach/pdp2.webp',
@@ -342,10 +355,10 @@ export const cases: Case[] = [
                 ]
             },
             {
-                title: 'PLP Nolita',
-                thumb: '/img/cases/coach/thumb/thumb3.webp',
-                thumbMobile: '/img/cases/coach/thumb/thumb3mobile.webp',
-                alt: 'PLP Nolita Collection - Imagem do projeto Coach',
+                title: 'Home',
+                thumb: '/img/cases/casaalmeida/thumb/thumb3.webp',
+                thumbMobile: '/img/cases/casaalmeida/thumb/thumb3mobile.webp',
+                alt: 'Home & Merchandising',
                 images: [
                     '/img/cases/coach/nolita1.webp',
                     '/img/cases/coach/nolita2.webp',
@@ -357,10 +370,10 @@ export const cases: Case[] = [
                 ]
             },
             {
-                title: 'PLP Teri',
-                thumb: '/img/cases/coach/thumb/thumb4.webp',
-                thumbMobile: '/img/cases/coach/thumb/thumb4mobile.webp',
-                alt: 'PLP Teri Collection - Imagem do projeto Coach',
+                title: 'PLP',
+                thumb: '/img/cases/casaalmeida/thumb/thumb4.webp',
+                thumbMobile: '/img/cases/casaalmeida/thumb/thumb4mobile.webp',
+                alt: 'PLP & Categorias',
                 images: [
                     '/img/cases/coach/teri1.webp',
                     '/img/cases/coach/teri2.webp',
@@ -382,6 +395,7 @@ export const cases: Case[] = [
         logo: {
             svg: CoachLogo,
             size: 'w-104.5 h-12',
+            featuredSize: 'w-[150px] h-[17px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25',
         },
         client: 'Coach Brasil',
 

@@ -22,7 +22,7 @@ export function Highlights({ project }: CaseProps) {
                                 <div className="px-2 py-2 xl:px-3 xl:py-3 bg-surface rounded-xl">
                                     <highlight.icon className="size-12 md:size-8 xl:size-12" style={{ color: project.primary }} />
                                 </div>
-                                <div className="flex flex-col items-center lg:items-start">
+                                <div className="flex flex-col items-center text-center lg:items-start">
                                     <span className="font-heading font-bold text-xl md:text-lg xl:text-xl" style={{ color: project.primary }}>{highlight.title}</span>
                                     <p className="font-sans text-foreground font-normal text-sm md:text-xs xl:text-sm">{highlight.subtitle}</p>
                                 </div>
