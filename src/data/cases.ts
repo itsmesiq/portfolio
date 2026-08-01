@@ -131,12 +131,12 @@ export const cases: Case[] = [
     {
         slug: 'shop2gether',
         title: 'Shop2Gether',
-        primary: '#EABFAC',
-        secondary: '#000000',
-        terciary: '#FFFFFF',
+        primary: '#DE7E2F',
+        secondary: '#A34C41',
+        terciary: '#744039',
         logo: {
             svg: Shop2GetherLogo,
-            size: 'w-104.5 h-12',
+            size: 'w-[318px] h-[36px] sm:w-104.5 sm:h-12',
             featuredSize: 'w-[150px] h-[17px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25',
         },
         client: 'Shop2Gether',
@@ -151,103 +151,115 @@ export const cases: Case[] = [
             'Wake',
         ],
 
-        subtitle: 'Migração de e-commerce para Wake com foco em performance, usabilidade e experiência',
-        description: 'Projeto desenvolvido para a Coach Brasil com o objetivo de migrar sua loja para a plataforma Wake, modernizando a interface e otimizando a experiência de compra em todos os dispositivos',
+        subtitle: 'Evolução contínua da experiência de compra da Shop2Gether através de novas funcionalidades para PDP, pós-compra e jornadas de conversão.',
+        description: 'Projeto de evolução contínua do e-commerce da Shop2Gether, com foco na criação de novas funcionalidades para otimizar a jornada de compra em desktop e mobile. O trabalho envolveu interfaces para PDP, avaliações, Minha Conta, minicart, carrinho, cross sell e fluxos de pós-compra, considerando as particularidades de uma operação multiseller e priorizando a experiência mobile.',
         credits: 'Projeto desenvolvido associado à Agencia Oasis',
 
         highlights: [
             {
                 icon: LayersIcon,
-                title: '40+',
-                subtitle: 'Telas desenvolvidas',
+                title: 'Cross Sell',
+                subtitle: 'Mini Cart e Carrinho',
                 width: 'w-[97px]',
             },
             {
                 icon: LayoutIcon,
-                title: '6',
-                subtitle: 'PLPs otimizadas',
+                title: 'PDP',
+                subtitle: 'Conversão e Confiança',
                 width: 'w-[97px]',
             },
             {
                 icon: DevicesIcon,
-                title: 'Responsivo',
-                subtitle: 'Layout desktop e mobile',
+                title: 'Mobile First',
+                subtitle: 'Desktop e Mobile',
                 width: 'w-[134px]',
             },
             {
                 icon: ShoppingBagIcon,
-                title: 'Wake Platform',
-                subtitle: 'E-commerce headless',
+                title: 'Marketplace',
+                subtitle: 'Operação Multiseller',
                 width: 'w-[170px]',
             },
         ],
-        challenge: 'Migrar o e-commerce da Coach Brasil para a plataforma Wake, mantendo a identidade da marca e melhorando a performance e a usabilidade do site. Além disso, era necessário adaptar componentes e fluxos para o público brasileiro.',
+        challenge: 'Desenvolver e evoluir funcionalidades para um e-commerce de moda consolidado, equilibrando novas experiências de compra com as restrições da plataforma e de uma operação multiseller. O desafio era criar interfaces escaláveis, consistentes e mobile first, capazes de melhorar descoberta de produtos, confiança na compra e navegação pós-venda.',
         contribution: [
-            'UI Design',
-            'Design Responsivo (Desktop e Mobile)',
-            'Design System no Figma',
-            'Prototipação de interfaces',
-            'Arquitetura de componentes',
-            'Colaboração com o time de desenvolvimento',
+            'UI Design Responsivo (Desktop e Mobile)',
+            'Fluxos da Área do Cliente',
+            'Minha Conta e Pós-compra',
+            'Página de Produto (PDP)',
+            'Sistema de Avaliações',
+            'Mini Cart e Carrinho',
+            'Cross Sell e Recomendações',
+            'Prototipação',
+            'Handoff para Desenvolvimento'
         ],
         scope: [
-            'Páginas de categoria (PLP) com 6 variações',
+            'Minha Conta Completa',
+            'Pedidos e Detalhes do Pedido',
+            'Cashback e Créditos',
+            'Wishlist',
+            'Trocas e Devoluções',
             'Página de Produto (PDP)',
-            'Área do Cliente',
-            'Fluxo completo de Checkout',
-            'Páginas institucionais e conteúdos personalizados',
+            'Sistema de Avaliações',
+            'Cross Sell',
+            'Mini Cart e Carrinho',
+            'Gift Message',
+            'Avise-me quando voltar ao estoque',
+            'Modal de Cupom'
         ],
         gallery: [
             {
-                title: 'Home',
-                thumb: '/img/cases/coach/thumb/thumb1.webp',
-                thumbMobile: '/img/cases/coach/thumb/thumb1mobile.webp',
-                alt: 'Home Coach - Imagem do projeto Coach',
-                images: [
-                    '/img/cases/coach/home1.webp',
-                    '/img/cases/coach/home2.webp',
-                    '/img/cases/coach/home3.webp'
-                ]
-            },
-            {
                 title: 'PDP',
-                thumb: '/img/cases/coach/thumb/thumb2.webp',
-                thumbMobile: '/img/cases/coach/thumb/thumb2mobile.webp',
-                alt: 'PDP Coach - Imagem do projeto Coach',
+                thumb: '/img/cases/shop2gether/thumb/thumb1.webp',
+                thumbMobile: '/img/cases/shop2gether/thumb/thumb1mobile.webp',
+                alt: 'PDP Shop2Gether',
                 images: [
-                    '/img/cases/coach/pdp1.webp',
-                    '/img/cases/coach/pdp2.webp',
-                    '/img/cases/coach/pdp3.webp'
+                    '/img/cases/shop2gether/pdp1.webp',
+                    '/img/cases/shop2gether/pdp2.webp',
+                    '/img/cases/shop2gether/pdp3.webp',
+                    '/img/cases/shop2gether/pdp4.webp'
                 ]
             },
             {
-                title: 'PLP Nolita',
-                thumb: '/img/cases/coach/thumb/thumb3.webp',
-                thumbMobile: '/img/cases/coach/thumb/thumb3mobile.webp',
-                alt: 'PLP Nolita Collection - Imagem do projeto Coach',
+                title: 'Minha Conta',
+                thumb: '/img/cases/shop2gether/thumb/thumb2.webp',
+                thumbMobile: '/img/cases/shop2gether/thumb/thumb2mobile.webp',
+                alt: 'Minha Conta Shop2Gether - Ambiente Logado',
                 images: [
-                    '/img/cases/coach/nolita1.webp',
-                    '/img/cases/coach/nolita2.webp',
-                    '/img/cases/coach/nolita3.webp',
-                    '/img/cases/coach/nolita4.webp',
-                    '/img/cases/coach/nolita5.webp',
-                    '/img/cases/coach/nolita6.webp',
-                    '/img/cases/coach/nolita7.webp'
+                    '/img/cases/shop2gether/logado1.webp',
+                    '/img/cases/shop2gether/logado2.webp',
+                    '/img/cases/shop2gether/logado3.webp',
+                    '/img/cases/shop2gether/logado4.webp',
+                    '/img/cases/shop2gether/logado5.webp',
+                    '/img/cases/shop2gether/logado6.webp',
+                    '/img/cases/shop2gether/logado7.webp',
+                    '/img/cases/shop2gether/logado8.webp'
                 ]
             },
             {
-                title: 'PLP Teri',
-                thumb: '/img/cases/coach/thumb/thumb4.webp',
-                thumbMobile: '/img/cases/coach/thumb/thumb4mobile.webp',
-                alt: 'PLP Teri Collection - Imagem do projeto Coach',
+                title: 'Checkout',
+                thumb: '/img/cases/shop2gether/thumb/thumb3.webp',
+                thumbMobile: '/img/cases/shop2gether/thumb/thumb3mobile.webp',
+                alt: 'Checkout Shop2Gether',
                 images: [
-                    '/img/cases/coach/teri1.webp',
-                    '/img/cases/coach/teri2.webp',
-                    '/img/cases/coach/teri3.webp',
-                    '/img/cases/coach/teri4.webp',
-                    '/img/cases/coach/teri5.webp',
-                    '/img/cases/coach/teri6.webp',
-                    '/img/cases/coach/teri7.webp'
+                    '/img/cases/shop2gether/checkout1.webp',
+                    '/img/cases/shop2gether/checkout2.webp',
+                    '/img/cases/shop2gether/checkout3.webp',
+                    '/img/cases/shop2gether/checkout4.webp',
+                    '/img/cases/shop2gether/checkout5.webp',
+                    '/img/cases/shop2gether/checkout6.webp',
+                    '/img/cases/shop2gether/checkout7.webp'
+                ]
+            },
+            {
+                title: 'Avaliações',
+                thumb: '/img/cases/shop2gether/thumb/thumb4.webp',
+                thumbMobile: '/img/cases/shop2gether/thumb/thumb4mobile.webp',
+                alt: 'Avaliações - PDP Shop2Gether',
+                images: [
+                    '/img/cases/shop2gether/avaliacao1.webp',
+                    '/img/cases/shop2gether/avaliacao2.webp',
+                    '/img/cases/shop2gether/avaliacao3.webp'
                 ]
             }
         ]
@@ -394,11 +406,11 @@ export const cases: Case[] = [
         slug: 'coach',
         title: 'Coach',
         primary: '#EABFAC',
-        secondary: '',
-        terciary: '',
+        secondary: '#CFA08C',
+        terciary: '#D68D6E',
         logo: {
             svg: CoachLogo,
-            size: 'w-104.5 h-12',
+            size: 'w-[318px] h-[36px] sm:w-104.5 sm:h-12',
             featuredSize: 'w-[150px] h-[17px] max-w-30.5 max-h-3.5 sm:max-w-37.5 sm:max-h-4.25',
         },
         client: 'Coach Brasil',
