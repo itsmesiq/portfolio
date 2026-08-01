@@ -295,13 +295,13 @@ export const cases: Case[] = [
             {
                 icon: LayersIcon,
                 title: 'UX & CRO',
-                subtitle: 'Análise de Comportamento',
+                subtitle: 'Heatmaps',
                 width: 'w-[97px]',
             },
             {
-                icon: LayoutIcon,
-                title: 'Product Discovery',
-                subtitle: 'Vitrines e Recomendações',
+                icon: ShoppingBagIcon,
+                title: 'Discovery',
+                subtitle: 'Merchandising',
                 width: 'w-[97px]',
             },
             {
@@ -311,9 +311,9 @@ export const cases: Case[] = [
                 width: 'w-[134px]',
             },
             {
-                icon: ShoppingBagIcon,
-                title: 'Wake Platform',
-                subtitle: 'Migração de Plataforma',
+                icon: LayoutIcon,
+                title: 'Wake',
+                subtitle: 'Migração',
                 width: 'w-[170px]',
             },
         ],
