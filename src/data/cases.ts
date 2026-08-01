@@ -338,9 +338,12 @@ export const cases: Case[] = [
                 thumbMobile: '/img/cases/casaalmeida/thumb/thumb1mobile.webp',
                 alt: 'PDP & Experiência de Produto',
                 images: [
-                    '/img/cases/coach/home1.webp',
-                    '/img/cases/coach/home2.webp',
-                    '/img/cases/coach/home3.webp'
+                    '/img/cases/casaalmeida/pdp1.webp',
+                    '/img/cases/casaalmeida/pdp2.webp',
+                    '/img/cases/casaalmeida/pdp3.webp',
+                    '/img/cases/casaalmeida/pdp4.webp',
+                    '/img/cases/casaalmeida/pdp5.webp',
+                    '/img/cases/casaalmeida/pdp6.webp'
                 ]
             },
             {
@@ -349,9 +352,13 @@ export const cases: Case[] = [
                 thumbMobile: '/img/cases/casaalmeida/thumb/thumb2mobile.webp',
                 alt: 'Buddemeyer Luxus',
                 images: [
-                    '/img/cases/coach/pdp1.webp',
-                    '/img/cases/coach/pdp2.webp',
-                    '/img/cases/coach/pdp3.webp'
+                    '/img/cases/casaalmeida/luxus1.webp',
+                    '/img/cases/casaalmeida/luxus2.webp',
+                    '/img/cases/casaalmeida/luxus3.webp',
+                    '/img/cases/casaalmeida/luxus4.webp',
+                    '/img/cases/casaalmeida/luxus5.webp',
+                    '/img/cases/casaalmeida/luxus6.webp',
+                    '/img/cases/casaalmeida/luxus7.webp'
                 ]
             },
             {
@@ -360,13 +367,13 @@ export const cases: Case[] = [
                 thumbMobile: '/img/cases/casaalmeida/thumb/thumb3mobile.webp',
                 alt: 'Home & Merchandising',
                 images: [
-                    '/img/cases/coach/nolita1.webp',
-                    '/img/cases/coach/nolita2.webp',
-                    '/img/cases/coach/nolita3.webp',
-                    '/img/cases/coach/nolita4.webp',
-                    '/img/cases/coach/nolita5.webp',
-                    '/img/cases/coach/nolita6.webp',
-                    '/img/cases/coach/nolita7.webp'
+                    '/img/cases/casaalmeida/home1.webp',
+                    '/img/cases/casaalmeida/home2.webp',
+                    '/img/cases/casaalmeida/home3.webp',
+                    '/img/cases/casaalmeida/home4.webp',
+                    '/img/cases/casaalmeida/home5.webp',
+                    '/img/cases/casaalmeida/home6.webp',
+                    '/img/cases/casaalmeida/home7.webp'
                 ]
             },
             {
@@ -375,13 +382,10 @@ export const cases: Case[] = [
                 thumbMobile: '/img/cases/casaalmeida/thumb/thumb4mobile.webp',
                 alt: 'PLP & Categorias',
                 images: [
-                    '/img/cases/coach/teri1.webp',
-                    '/img/cases/coach/teri2.webp',
-                    '/img/cases/coach/teri3.webp',
-                    '/img/cases/coach/teri4.webp',
-                    '/img/cases/coach/teri5.webp',
-                    '/img/cases/coach/teri6.webp',
-                    '/img/cases/coach/teri7.webp'
+                    '/img/cases/casaalmeida/plp1.webp',
+                    '/img/cases/casaalmeida/plp2.webp',
+                    '/img/cases/casaalmeida/plp3.webp',
+                    '/img/cases/casaalmeida/plp4.webp'
                 ]
             }
         ]
