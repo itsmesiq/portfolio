@@ -3,16 +3,10 @@ import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
-import { Lexend, Space_Grotesk } from 'next/font/google';
+import { Outfit } from 'next/font/google';
 
-const lexend = Lexend({
-    variable: '--font-lexend',
-    weight: ['300', '400', '500', '600', '700'],
-    subsets: ['latin'],
-});
-
-const spaceGrotesk = Space_Grotesk({
-    variable: '--font-space-grotesk',
+const outfit = Outfit({
+    variable: '--font-outfit',
     weight: ['300', '400', '500', '600', '700'],
     subsets: ['latin'],
 });
@@ -87,7 +81,7 @@ export default function RootLayout({
         <html
             lang="pt-BR"
             data-scroll-behavior="smooth"
-            className={`${spaceGrotesk.variable} ${lexend.variable} h-full scroll-smooth antialiased`}
+            className={`${outfit.variable} h-full scroll-smooth antialiased`}
             suppressHydrationWarning
         >
             <body className="flex min-h-full flex-col overflow-x-hidden">
