@@ -1,69 +1,26 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 :root {
-  --background: #F1F1F1;
-  --foreground: #000109;
-  --card: #E5E5E5;
-  --muted: #292C34;
-  --surface: #C0C4CE;
-  --surface-foreground: #000109;
-  --surface-foreground-hover: #FFF;
-  --surface-hover: #3C4253;
-  --border: #000109;
-  --primary: #FEB600;
-  --primary-foreground: #000109;
-  --primary-hover: #FEE400;
-  --secondary-hover: rgba(0, 1, 9, 0.15);
-  --accent: #AB7B00;
-  --gradient: linear-gradient(180deg, rgba(241, 241, 241, 0) 0%, #F1F1F1 100%);
-}
-
-.dark {
-  --background: #000109;
-  --foreground: #FFF;
-  --muted: #C0C4CE;
-  --card: #101021;
-  --surface: #292C34;
-  --surface-foreground: #C0C4CE;
-  --surface-foreground-hover: #FFF;
-  --surface-hover: #101021;
-  --border: #FFF;
-  --primary: #FEB600;
-  --primary-foreground: #000109;
-  --primary-hover: #FEE400;
-  --secondary-hover: rgba(255, 255, 255, 0.15);
-  --accent: #FEB600;
-  --gradient: linear-gradient(180deg, rgba(16, 16, 33, 0) 0%, #000109 100%);
+  --background: #0A0A0B;
+  --surface: #151515;
+  --stroke: #292929;
+  --muted: #B3B3B3;
+  --foreground: #F0F0F0;
+  --primary: #FF6B2C;
+  --accent: #FF9A55;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-muted: var(--muted);
-  --color-card: var(--card);
   --color-surface: var(--surface);
-  --color-surface-foreground: var(--surface-foreground);
-  --color-surface-foreground-hover: var(--surface-foreground-hover);
-  --color-surface-hover: var(--surface-hover);
-  --color-border: var(--border);
+  --color-stroke: var(--stroke);
+  --color-muted: var(--muted);
+  --color-foreground: var(--foreground);
   --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary-hover: var(--primary-hover);
-  --color-secondary-hover: var(--secondary-hover);
   --color-accent: var(--accent);
 
   --font-sans: var(--font-space-grotesk);
   --font-heading: var(--font-lexend);
-
-  --breakpoint-1720: 107.5rem;
-}
-
-@layer utilities {
-  .bg-gradient {
-    background: var(--gradient);
-  }
 }
 
 html {

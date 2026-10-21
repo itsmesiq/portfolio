@@ -1,21 +1,10 @@
-import Header from "@/components/Header/Header";
-import Hero from "@/components/Hero/Hero";
-import FeaturedCompanies from "@/components/FeaturedCompanies/FeaturedCompanies";
-import Footer from "@/components/Footer/Footer";
-import Contact from "@/components/Contact/Contact";
-import Skills from "@/components/Skills/Skills";
-import Cases from "@/components/Cases/Cases";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center overflow-x-hidden">
-      <Header />
-      <Hero />
-      <FeaturedCompanies />
-      <Cases />
-      <Skills />
-      <Contact />
-      <Footer />
+    <div className="flex items-center justify-center h-dvh">
+      <div className="text-center">
+        <h1 className="text-xl text-foreground font-bold">Under construction</h1>
+        <p>We are currently working on our website. Please check back later for updates.</p>
+      </div>
     </div>
   );
 }
