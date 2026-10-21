@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Lexend, Space_Grotesk } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import { ThemeProvider } from "@/components/Theme/ThemeProvider";
 import "./globals.css";
 
 const lexend = Lexend({
@@ -20,7 +19,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-itsmesiq.vercel.app"),
 
-  title: "Ana Siqueira | UI Designer & Frontend Developer",
+  title: "Ana Siqueira | Full Stack Developer",
 
   description:
     "Portfólio de Ana Siqueira com projetos de UI Design e Front-end para e-commerce, interfaces responsivas, design systems e desenvolvimento com React e Next.js.",
@@ -91,9 +90,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">
-        <ThemeProvider>
           {children}
-        </ThemeProvider>
         <SpeedInsights />
         <Analytics />
       </body>
