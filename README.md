@@ -68,7 +68,6 @@ GitHub: https://github.com/itsmesiq
 
 Email: anasiqueira.serpentis@gmail.com
 
-
 ## ⚙️ Como executar
 
 Clone o repositório:
@@ -100,7 +99,6 @@ Abra:
 ```
 http://localhost:3000
 ```
-
 
 ## 📄 Licença
 
