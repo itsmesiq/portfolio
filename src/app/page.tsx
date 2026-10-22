@@ -1,10 +1,13 @@
+import { Hero } from '@/components/Hero';
+import { Navigation } from '@/components/Navigation';
+
 export default function Home() {
     return (
-        <div className="flex h-dvh items-center justify-center">
-            <div className="text-center">
-                <h1 className="text-xl font-bold text-foreground">Under construction</h1>
-                <p>We are currently working on our website. Please check back later for updates.</p>
-            </div>
+        <div className="flex h-full w-full justify-center px-5 py-8 md:justify-end md:px-8 lg:px-16 lg:pt-20">
+            <Navigation />
+            <main>
+                <Hero />
+            </main>
         </div>
     );
 }
