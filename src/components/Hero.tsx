@@ -1,10 +1,12 @@
 import { ArrowDownToLine, ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 
+import { ChimoBoard } from './ChimoBoard';
+
 export function Hero() {
     return (
-        <section className="font-sans">
-            <div className="grid grid-cols-[auto_auto] grid-rows-[auto_auto_auto] items-center gap-4 rounded-3xl border border-stroke bg-surface px-5 py-5 sm:gap-x-8">
+        <section className="grid grid-cols-1 gap-8 font-sans lg:grid-cols-[auto_auto] lg:grid-rows-2">
+            <div className="grid grid-cols-[auto_auto] grid-rows-[auto_auto_auto] items-center gap-4 rounded-3xl border border-stroke bg-surface px-5 py-5 sm:gap-x-8 xl:gap-x-16 xl:px-10 xl:py-6">
                 <div className="col-span-2 mb-2 flex items-center justify-between md:col-span-1">
                     <div className="flex items-center gap-1.5 rounded-full border border-[#00A613]/30 bg-[#00A613]/15 px-3 py-1">
                         <div className="size-1.5 rounded-full bg-[#00A613]"></div>
@@ -60,8 +62,16 @@ export function Hero() {
                     priority
                 />
             </div>
-            <div></div>
-            <div></div>
+
+            <div className="flex flex-col gap-6 rounded-3xl border border-stroke bg-surface px-5 py-5 sm:gap-x-8 lg:col-start-1 xl:gap-x-16 xl:px-10 xl:py-6">
+                <h3 className="text-base tracking-[1.5px] text-foreground">GitHub Activity</h3>
+
+                <div></div>
+            </div>
+
+            <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1">
+                <ChimoBoard />
+            </div>
         </section>
     );
 }
