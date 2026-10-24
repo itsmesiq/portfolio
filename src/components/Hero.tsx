@@ -6,7 +6,7 @@ import { ChimoBoard } from './ChimoBoard';
 export function Hero() {
     return (
         <section className="grid grid-cols-1 gap-8 font-sans lg:grid-cols-[auto_auto] lg:grid-rows-2">
-            <div className="grid grid-cols-[auto_auto] grid-rows-[auto_auto_auto] items-center gap-4 rounded-3xl border border-stroke bg-surface px-5 py-5 sm:gap-x-8 xl:gap-x-16 xl:px-10 xl:py-6">
+            <div className="grid grid-cols-[minmax(0,1fr)_auto] grid-rows-[auto_auto_auto] items-center gap-4 rounded-3xl border border-stroke bg-surface px-5 py-5 sm:gap-x-8 2xl:gap-x-16 2xl:px-10 2xl:py-6">
                 <div className="col-span-2 mb-2 flex items-center justify-between md:col-span-1">
                     <div className="flex items-center gap-1.5 rounded-full border border-[#00A613]/30 bg-[#00A613]/15 px-3 py-1">
                         <div className="size-1.5 rounded-full bg-[#00A613]"></div>
@@ -58,7 +58,7 @@ export function Hero() {
                     alt="Avatar"
                     width={254}
                     height={254}
-                    className="aspect-square rounded-3xl sm:row-span-2 sm:max-w-[200px] md:row-span-3 md:row-start-1 md:max-w-none"
+                    className="aspect-square max-w-[140px] rounded-3xl sm:row-span-2 sm:max-w-[200px] md:row-span-3 md:row-start-1 md:max-w-none"
                     priority
                 />
             </div>
@@ -69,7 +69,7 @@ export function Hero() {
                 <div></div>
             </div>
 
-            <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1">
+            <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1 xl:max-w-[416px]">
                 <ChimoBoard />
             </div>
         </section>
