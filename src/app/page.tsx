@@ -3,9 +3,9 @@ import { Navigation } from '@/components/Navigation';
 
 export default function Home() {
     return (
-        <div className="flex h-full w-full justify-center px-5 py-8 md:justify-end md:px-8 lg:px-16 lg:pt-20">
+        <div className="flex h-full w-full justify-end px-5 py-8 md:justify-end md:px-8 lg:px-16 lg:pt-20 lg:pl-32">
             <Navigation />
-            <main>
+            <main className="w-full">
                 <Hero />
             </main>
         </div>

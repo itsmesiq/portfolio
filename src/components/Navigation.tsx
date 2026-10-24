@@ -13,7 +13,7 @@ export function Navigation() {
                 {navItems.map((item) => (
                     <li
                         key={item.name}
-                        className="rounded-full bg-transparent px-1.5 py-3 transition-colors duration-300 ease-in-out hover:bg-background"
+                        className="rounded-full bg-transparent px-1.5 py-3 transition-colors duration-300 ease-in-out hover:text-accent"
                     >
                         <a href={item.href} className="rotate-180 [writing-mode:vertical-rl]">
                             {item.name}
