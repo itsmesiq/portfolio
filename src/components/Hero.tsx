@@ -2,6 +2,7 @@ import { ArrowDownToLine, ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 
 import { ChimoBoard } from './ChimoBoard';
+import { GitHubActivity } from './GitHubActivity';
 
 export function Hero() {
     return (
@@ -78,10 +79,8 @@ export function Hero() {
                 />
             </div>
 
-            <div className="flex flex-col gap-6 rounded-3xl border border-stroke bg-surface px-5 py-5 sm:gap-x-8 lg:col-start-1 xl:gap-x-16 xl:px-10 xl:py-6">
-                <h3 className="text-base tracking-[1.5px] text-foreground">GitHub Activity</h3>
-
-                <div></div>
+            <div className="rounded-3xl border border-stroke bg-surface px-5 py-5 lg:col-start-1 xl:px-10 xl:py-6">
+                <GitHubActivity />
             </div>
 
             <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1 xl:max-w-[416px]">
