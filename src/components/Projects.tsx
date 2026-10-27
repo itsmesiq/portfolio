@@ -16,9 +16,9 @@ export function Projects() {
                             <Image
                                 src={project.image}
                                 alt={project.title}
-                                width={702}
-                                height={370}
-                                className="rounded-3xl"
+                                width={784}
+                                height={407}
+                                className="h-auto w-full rounded-3xl"
                             />
                         ) : (
                             <div className="flex aspect-square h-auto w-full max-w-[80px] items-center justify-center rounded-2xl border border-stroke bg-muted p-2 md:max-w-[144px]">
