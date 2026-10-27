@@ -1,6 +1,7 @@
 import { Hero } from '@/components/Hero';
 import { Navigation } from '@/components/Navigation';
 import { Projects } from '@/components/Projects';
+import { TechStack } from '@/components/TechStack';
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
             <main className="flex w-fit flex-col items-center">
                 <Hero />
                 <Projects />
+                <TechStack />
             </main>
         </div>
     );
