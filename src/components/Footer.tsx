@@ -1,0 +1,52 @@
+import Image from 'next/image';
+
+export function Footer() {
+    return (
+        <footer className="w-full min-w-0">
+            <div className="my-20 flex w-full flex-col items-center rounded-3xl border border-stroke bg-surface p-10">
+                <h2 className="text-3xl font-medium tracking-[1.5px]">Let&apos;s talk!</h2>
+                <p className="py-3 text-center text-base font-light tracking-[0.5px] text-muted">
+                    Have an opportunity, an interesting idea, or just want to say hi?{' '}
+                    <span className="font-medium text-accent">My inbox is open.</span>
+                </p>
+                <div className="mt-6 flex items-center gap-2.5 lg:gap-2 xl:gap-2.5">
+                    <a href="https://github.com/itsmesiq" aria-label="GitHub">
+                        <Image
+                            src="/icons/github.svg"
+                            alt="GitHub"
+                            width={24}
+                            height={24}
+                            className="lg:size-5 xl:size-6"
+                        />
+                    </a>
+                    <a href="https://www.linkedin.com/in/itsmesiq/" aria-label="LinkedIn">
+                        <Image
+                            src="/icons/linkedin.svg"
+                            alt="LinkedIn"
+                            width={24}
+                            height={24}
+                            className="lg:size-5 xl:size-6"
+                        />
+                    </a>
+                    <a href="mailto:anasiqueira.serpentis@gmail.com" aria-label="Email">
+                        <Image
+                            src="/icons/email.svg"
+                            alt="Email"
+                            width={24}
+                            height={24}
+                            className="lg:size-5 xl:size-6"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div className="flex w-full items-center justify-center py-4">
+                <p className="text-base font-light text-muted">
+                    <span className="text-primary">
+                        &copy; {new Date().getFullYear()} Ana Siqueira.
+                    </span>{' '}
+                    All rights reserved.
+                </p>
+            </div>
+        </footer>
+    );
+}
