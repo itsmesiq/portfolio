@@ -20,7 +20,7 @@ export function ChimoBoard() {
     ];
 
     return (
-        <div className="flex flex-col items-center justify-center gap-5 rounded-3xl border border-stroke bg-surface px-5 py-5">
+        <div className="flex h-full flex-col items-center justify-center gap-5 rounded-3xl border border-stroke bg-surface px-5 py-5">
             <div className="flex items-center gap-2">
                 <Image src="/illustrations/chimo.svg" alt="ChimoBoard" width={40} height={36} />
                 <h3 className="text-3xl font-semibold tracking-[-1px] text-foreground">
