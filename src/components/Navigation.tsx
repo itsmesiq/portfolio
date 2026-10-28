@@ -8,7 +8,7 @@ export function Navigation() {
     ];
 
     return (
-        <nav className="fixed top-1/2 left-8 hidden -translate-y-1/2 lg:block">
+        <nav className="fixed top-1/2 left-8 z-20 hidden -translate-y-1/2 lg:block">
             <ul className="flex flex-col items-center gap-2 rounded-full border border-stroke bg-surface px-3 py-3 text-base tracking-[1.5px]">
                 {navItems.map((item) => (
                     <li
