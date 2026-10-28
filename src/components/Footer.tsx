@@ -3,7 +3,7 @@ import Image from 'next/image';
 export function Footer() {
     return (
         <footer className="w-full min-w-0">
-            <div className="my-20 flex w-full flex-col items-center rounded-3xl border border-stroke bg-surface p-10">
+            <div className="mb-10 flex w-full flex-col items-center rounded-3xl border border-stroke bg-surface p-10 xl:mb-20">
                 <h2 className="text-3xl font-medium tracking-[1.5px]">Let&apos;s talk!</h2>
                 <p className="py-3 text-center text-base font-light tracking-[0.5px] text-muted">
                     Have an opportunity, an interesting idea, or just want to say hi?{' '}

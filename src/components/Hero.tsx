@@ -6,7 +6,7 @@ import { GitHubActivity } from './GitHubActivity';
 
 export function Hero() {
     return (
-        <section className="mb-20 grid w-full max-w-[1366px] grid-cols-1 gap-8 font-sans lg:auto-rows-auto lg:grid-cols-[auto_auto] xl:grid-cols-[minmax(0,1fr)_auto] xl:grid-rows-2">
+        <section className="grid w-full max-w-[1366px] grid-cols-1 gap-8 font-sans lg:auto-rows-auto lg:grid-cols-[auto_auto] xl:grid-cols-[minmax(0,1fr)_auto] xl:grid-rows-2">
             <div className="grid max-w-[910px] auto-rows-auto grid-cols-[minmax(0,1fr)_auto] items-center gap-4 rounded-3xl border border-stroke bg-surface px-5 py-5 sm:gap-x-8 lg:min-w-[380px] lg:gap-0 xl:gap-4 2xl:gap-x-16 2xl:px-10 2xl:py-6">
                 <div className="col-span-2 row-start-1 mb-2 flex items-center justify-between md:col-span-1 lg:col-span-2 xl:col-span-1">
                     <div className="flex items-center gap-1.5 rounded-full border border-[#00A613]/30 bg-[#00A613]/15 px-3 py-1">
