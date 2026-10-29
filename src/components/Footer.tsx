@@ -5,7 +5,7 @@ export function Footer() {
         <footer className="w-full min-w-0">
             <div className="mb-10 flex w-full flex-col items-center rounded-3xl border border-stroke bg-surface p-10 xl:mb-20">
                 <h2 className="text-3xl font-medium tracking-[1.5px]">Let&apos;s talk!</h2>
-                <p className="py-3 text-center text-base font-light tracking-[0.5px] text-muted">
+                <p className="py-3 text-center text-sm font-light tracking-[0.5px] text-muted lg:text-base">
                     Have an opportunity, an interesting idea, or just want to say hi?{' '}
                     <span className="font-medium text-accent">My inbox is open.</span>
                 </p>
@@ -40,7 +40,7 @@ export function Footer() {
                 </div>
             </div>
             <div className="flex w-full items-center justify-center py-4">
-                <p className="text-base font-light text-muted">
+                <p className="text-xs font-light text-muted md:text-base">
                     <span className="text-primary">
                         &copy; {new Date().getFullYear()} Ana Siqueira.
                     </span>{' '}
