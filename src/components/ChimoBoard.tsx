@@ -1,6 +1,32 @@
+'use client';
+
 import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+
+const CHIMOBOARD_URL = 'https://chimoboard.vercel.app/?mode=embed';
 
 export function ChimoBoard() {
+    const [height, setHeight] = useState(640);
+    const iframeRef = useRef<HTMLIFrameElement>(null);
+
+    useEffect(() => {
+        function handleMessage(event: MessageEvent) {
+            if (event.origin !== new URL(CHIMOBOARD_URL).origin) return;
+            if (event.source !== iframeRef.current?.contentWindow) return;
+
+            if (event.data?.type === 'chimoboard:resize') {
+                const nextHeight = Number(event.data.height);
+
+                if (Number.isFinite(nextHeight) && nextHeight > 0) {
+                    setHeight(nextHeight);
+                }
+            }
+        }
+
+        window.addEventListener('message', handleMessage);
+        return () => window.removeEventListener('message', handleMessage);
+    }, []);
+
     const chimoInstructions = [
         {
             id: 1,
@@ -28,9 +54,11 @@ export function ChimoBoard() {
                 </h3>
             </div>
             <iframe
-                src="https://chimoboard.vercel.app/?mode=embed"
+                ref={iframeRef}
+                src={CHIMOBOARD_URL}
                 title="ChimoBoard"
-                className="block aspect-[374/464] h-auto w-full max-w-[380px] rounded-lg border-none bg-transparent outline-none"
+                className="block w-full min-w-0 border-0"
+                style={{ height }}
             ></iframe>
             <div className="flex items-center justify-center gap-2">
                 {chimoInstructions.map((instruction) => (
