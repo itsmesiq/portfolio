@@ -3,8 +3,8 @@ import Image from 'next/image';
 export function AboutMe() {
     return (
         <section className="grid w-full max-w-[1366px] grid-cols-1 gap-8 font-sans xl:grid-cols-[minmax(0,1fr)_auto]">
-            <div className="relative flex w-full min-w-0 flex-col items-end rounded-3xl border border-stroke bg-surface py-8 xl:px-6 2xl:px-10">
-                <div className="w-full max-w-[332px] min-w-0 xl:max-w-[224px] 2xl:max-w-[380px]">
+            <div className="relative flex w-full min-w-0 flex-col items-end gap-10 rounded-3xl border border-stroke bg-surface px-3 py-8 sm:px-8 xl:px-6 2xl:px-10">
+                <div className="about-me w-full min-w-0 px-5 sm:max-w-[248px] sm:px-0 md:max-w-[280px] lg:max-w-[332px] xl:max-w-[224px] 2xl:max-w-[380px]">
                     <h2 className="mb-4 text-3xl font-medium text-foreground">About Me</h2>
                     <div className="flex flex-col items-start gap-3 text-sm font-light text-muted 2xl:gap-5">
                         <p>
@@ -29,14 +29,14 @@ export function AboutMe() {
                     alt="Siq sitting in front of a computer"
                     width={570}
                     height={512}
-                    className="absolute -bottom-5 left-14 z-10 h-auto w-full max-w-[400px] xl:-left-29 xl:max-w-[556px] 2xl:max-w-[570px]"
+                    className="-bottom-5 -left-14 z-10 block h-auto w-full sm:absolute sm:max-w-[364px] md:-left-6 md:max-w-[400px] lg:left-14 xl:-left-29 xl:max-w-[556px] 2xl:max-w-[570px]"
                 />
                 <Image
                     src="/illustrations/code-art.svg"
                     alt="Code, art, love illustration"
                     width={232}
                     height={250}
-                    className="absolute top-6 left-12 z-5 h-auto w-full max-w-[212px] xl:left-6 xl:max-w-[232px]"
+                    className="absolute top-[440px] left-6 z-5 h-auto w-full max-w-[180px] sm:top-6 sm:max-w-[212px] lg:left-12 xl:left-6 xl:max-w-[232px]"
                 />
                 <Image
                     src="/illustrations/monster.svg"
