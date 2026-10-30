@@ -56,7 +56,7 @@ export function Projects() {
                                 href={project.githubLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 rounded-full border border-foreground px-4 py-2 text-xs tracking-[0.5px] uppercase"
+                                className="flex items-center gap-2 rounded-full border border-foreground px-4 py-2 text-xs tracking-[0.5px] uppercase transition-all duration-300 ease-in-out hover:border-primary hover:text-accent hover:shadow-[0_0_6px_0] hover:shadow-accent"
                             >
                                 <span>{index === 2 ? 'Front Code' : 'See code'}</span>
                                 <ArrowUpRight className="h-4 w-4" />
@@ -67,7 +67,7 @@ export function Projects() {
                                     href={project.demoLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 rounded-full border border-foreground px-4 py-2 text-xs tracking-[0.5px] uppercase"
+                                    className="flex items-center gap-2 rounded-full border border-foreground px-4 py-2 text-xs tracking-[0.5px] uppercase transition-all duration-300 ease-in-out hover:border-primary hover:text-accent hover:shadow-[0_0_6px_0] hover:shadow-accent"
                                 >
                                     <span>See demo</span>
                                     <ArrowUpRight className="h-4 w-4" />
@@ -79,7 +79,7 @@ export function Projects() {
                                     href={project.secondaryLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 rounded-full border border-foreground px-4 py-2 text-xs tracking-[0.5px] uppercase"
+                                    className="flex items-center gap-2 rounded-full border border-foreground px-4 py-2 text-xs tracking-[0.5px] uppercase transition-all duration-300 ease-in-out hover:border-primary hover:text-accent hover:shadow-[0_0_6px_0] hover:shadow-accent"
                                 >
                                     <span>Back code</span>
                                     <ArrowUpRight className="h-4 w-4" />

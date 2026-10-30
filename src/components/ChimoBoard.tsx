@@ -40,13 +40,13 @@ export function ChimoBoard() {
         },
         {
             id: 3,
-            text: 'Chimos não podem se tocar',
+            text: 'Chimos não se tocam',
             type: 'adjacency',
         },
     ];
 
     return (
-        <div className="flex h-full flex-col items-center justify-center gap-5 rounded-3xl border border-stroke bg-surface px-5 py-5">
+        <div className="flex h-full flex-col items-center justify-center gap-5 rounded-3xl border border-stroke bg-surface px-4 py-5 sm:px-5">
             <div className="flex items-center gap-2">
                 <Image src="/illustrations/chimo.svg" alt="ChimoBoard" width={40} height={36} />
                 <h3 className="text-3xl font-semibold tracking-[-1px] text-foreground">
@@ -57,16 +57,16 @@ export function ChimoBoard() {
                 ref={iframeRef}
                 src={CHIMOBOARD_URL}
                 title="ChimoBoard"
-                className="block w-full min-w-0 border-0"
+                className="block w-full min-w-0 overflow-hidden border-none"
                 style={{ height }}
             ></iframe>
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex w-full flex-col items-center justify-center gap-2 sm:flex-row">
                 {chimoInstructions.map((instruction) => (
                     <div
                         key={instruction.id}
-                        className="flex items-center gap-3 rounded-lg border border-stroke px-2 py-1.5"
+                        className="flex w-full items-center gap-5 rounded-lg border border-stroke px-2 py-1.5 lg:gap-3"
                     >
-                        <div className="grid size-[56px] shrink-0 grid-cols-3 grid-rows-3 gap-0.5">
+                        <div className="grid size-[56px] shrink-0 grid-cols-3 grid-rows-3 gap-0.5 lg:size-[48px]">
                             {Array.from({ length: 9 }, (_, index) => {
                                 const isChimo =
                                     (instruction.type === 'region' && index === 4) ||
@@ -98,7 +98,7 @@ export function ChimoBoard() {
                                 );
                             })}
                         </div>
-                        <span className="max-w-[72px] text-sm leading-[110%]">
+                        <span className="text-sm leading-[110%] sm:max-w-[88px] lg:text-xs">
                             {instruction.text}
                         </span>
                     </div>
