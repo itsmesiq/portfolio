@@ -6,7 +6,10 @@ import { GitHubActivity } from './GitHubActivity';
 
 export function Hero() {
     return (
-        <section className="grid w-full max-w-[1366px] grid-cols-1 gap-8 font-sans lg:auto-rows-auto lg:grid-cols-[auto_auto] xl:grid-cols-[minmax(0,1fr)_auto] xl:grid-rows-2">
+        <section
+            id="hello"
+            className="grid w-full max-w-[1366px] grid-cols-1 gap-8 font-sans lg:auto-rows-auto lg:grid-cols-[auto_auto] xl:grid-cols-[minmax(0,1fr)_auto] xl:grid-rows-2"
+        >
             <div className="grid max-w-[910px] auto-rows-auto grid-cols-[minmax(0,1fr)_auto] items-center gap-4 rounded-3xl border border-stroke bg-surface px-5 py-5 sm:gap-x-8 lg:min-w-[380px] lg:gap-0 xl:gap-4 2xl:gap-x-16 2xl:px-10 2xl:py-6">
                 <div className="col-span-2 row-start-1 mb-2 flex items-center justify-between md:col-span-1 lg:col-span-2 xl:col-span-1">
                     <div className="flex items-center gap-1.5 rounded-full border border-[#00A613]/30 bg-[#00A613]/15 px-3 py-1">
@@ -16,7 +19,12 @@ export function Hero() {
                         </span>
                     </div>
                     <div className="flex items-center gap-2.5 lg:gap-2 xl:gap-2.5">
-                        <a href="https://github.com/itsmesiq" aria-label="GitHub">
+                        <a
+                            href="https://github.com/itsmesiq"
+                            aria-label="GitHub"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Image
                                 src="/icons/github.svg"
                                 alt="GitHub"
@@ -25,7 +33,12 @@ export function Hero() {
                                 className="lg:size-5 xl:size-6"
                             />
                         </a>
-                        <a href="https://www.linkedin.com/in/itsmesiq/" aria-label="LinkedIn">
+                        <a
+                            href="https://www.linkedin.com/in/itsmesiq/"
+                            aria-label="LinkedIn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Image
                                 src="/icons/linkedin.svg"
                                 alt="LinkedIn"
@@ -34,7 +47,12 @@ export function Hero() {
                                 className="lg:size-5 xl:size-6"
                             />
                         </a>
-                        <a href="mailto:anasiqueira.serpentis@gmail.com" aria-label="Email">
+                        <a
+                            href="mailto:anasiqueira.serpentis@gmail.com"
+                            aria-label="Email"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Image
                                 src="/icons/email.svg"
                                 alt="Email"
@@ -57,16 +75,23 @@ export function Hero() {
 
                 <div className="col-span-2 row-start-3 flex items-center gap-4 sm:col-span-1 lg:col-span-2 lg:row-start-4 xl:col-span-1 xl:row-start-3">
                     <a
-                        href=""
+                        href="mailto:anasiqueira.serpentis@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 rounded-full border border-foreground px-4 py-2 text-xs tracking-[0.5px] uppercase transition-all duration-300 ease-in-out hover:border-primary hover:text-accent hover:shadow-[0_0_6px_0] hover:shadow-accent"
                     >
                         Contact Me
                         <ArrowUpRight className="size-4" />
                     </a>
-                    <button className="flex cursor-pointer items-center gap-2 rounded-full border border-foreground px-4 py-2 text-xs tracking-[0.5px] uppercase transition-all duration-300 ease-in-out hover:border-primary hover:text-accent hover:shadow-[0_0_6px_0] hover:shadow-accent">
+                    <a
+                        href="/cv/CV_Fullstack_AnaSiqueira.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex cursor-pointer items-center gap-2 rounded-full border border-foreground px-4 py-2 text-xs tracking-[0.5px] uppercase transition-all duration-300 ease-in-out hover:border-primary hover:text-accent hover:shadow-[0_0_6px_0] hover:shadow-accent"
+                    >
                         Download CV
                         <ArrowDownToLine className="size-4" />
-                    </button>
+                    </a>
                 </div>
 
                 <Image

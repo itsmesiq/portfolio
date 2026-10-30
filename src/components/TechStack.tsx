@@ -18,7 +18,10 @@ const techStack = [
 
 export function TechStack() {
     return (
-        <div className="flex w-full max-w-[1366px] flex-col items-center gap-6 rounded-3xl border border-stroke bg-surface px-5 py-5 font-sans md:px-6 md:py-6 lg:flex-row lg:gap-22 2xl:px-10 2xl:py-6">
+        <div
+            id="tech-stack"
+            className="flex w-full max-w-[1366px] flex-col items-center gap-6 rounded-3xl border border-stroke bg-surface px-5 py-5 font-sans md:px-6 md:py-6 lg:flex-row lg:gap-22 2xl:px-10 2xl:py-6"
+        >
             <h2 className="text-3xl font-medium text-foreground lg:max-w-[76px]">
                 <span className="text-primary">Tech </span>
                 Stack
