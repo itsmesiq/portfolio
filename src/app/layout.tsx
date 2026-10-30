@@ -17,18 +17,16 @@ export const metadata: Metadata = {
     title: 'Ana Siqueira | Full Stack Developer',
 
     description:
-        'Portfólio de Ana Siqueira com projetos de UI Design e Front-end para e-commerce, interfaces responsivas, design systems e desenvolvimento com React e Next.js.',
+        'Full Stack Developer focused on React, Next.js, TypeScript, Node.js and building modern web applications.',
 
     keywords: [
         'Ana Siqueira',
-        'UI Designer',
+        'Full Stack Developer',
         'Frontend Developer',
         'React',
         'Next.js',
         'TypeScript',
         'Tailwind CSS',
-        'UX/UI',
-        'Design System',
         'E-commerce',
         'Wake',
         'Figma',
@@ -48,10 +46,10 @@ export const metadata: Metadata = {
     },
 
     openGraph: {
-        title: 'Ana Siqueira | UI Designer & Frontend Developer',
+        title: 'Ana Siqueira | Full Stack Developer',
 
         description:
-            'Projetos de UI Design, Front-end e e-commerce com foco em experiência, performance e interfaces responsivas.',
+            'Full Stack Developer focused on React, Next.js, TypeScript, Node.js and building modern web applications.',
 
         url: 'https://portfolio-itsmesiq.vercel.app',
 
