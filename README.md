@@ -1,105 +1,113 @@
-# Portfolio
+# Ana Siqueira — Portfolio
 
-Meu portfólio desenvolvido com Next.js, React e Tailwind CSS para apresentar projetos de UI Design e Frontend Development.
+> A personal portfolio showcasing my work, projects, and skills as a Full Stack Developer.
+
+Built to present my development journey, technical interests, and selected projects through a dark, minimalist interface with custom illustrations and interactive elements.
 
 ![Preview do projeto](./public/preview.jpg)
 
-## ✨ Sobre
+## ✨ Overview
 
-Este projeto foi desenvolvido com foco em performance, acessibilidade e responsividade, reunindo alguns dos principais projetos da minha atuação como UI Designer e Frontend Developer.
+This portfolio brings together my projects, technical stack, GitHub activity, and a little bit of who I am beyond development.
 
-O objetivo é apresentar estudos de caso completos, mostrando desde o processo de design até a implementação das interfaces.
+The interface features a bento-inspired layout, custom visual assets, responsive components, and interactive experiences designed to make exploring my work more engaging.
 
-## 💡 O que foi praticado
+## 📸 Featured Projects
 
-- Componentização
-- Organização de dados com TypeScript
-- Responsividade Mobile First
-- Motion para animações
-- SEO com Metadata API
-- Otimização de imagens
-- Estrutura escalável de componentes
+### Etherea
 
-## 🚀 Tecnologias
+A personal productivity workspace that integrates Notion features, habit tracking, and customizable widgets into a gamified experience.
 
-- Next.js 16
-- React 19
-- TypeScript
-- Tailwind CSS 4
-- Motion
-- ESLint
+### Template Preview
 
-## 📂 Estrutura
+A development tool for processing and rendering HTML email templates, featuring a custom Scriban-based engine, reusable components, mock data, and a dedicated preview API.
 
-```text
-src
-├── app
-├── components
-├── data
-├── types
-└── public
-```
+### ChimoBoard
 
-## 📱 Funcionalidades
+A logic puzzle game combining Sudoku and Minesweeper, featuring procedural puzzle generation, unique-solution validation, colored regions, and a limited-lives gameplay system.
 
-- Layout totalmente responsivo
-- Animações com Motion
-- SEO otimizado
-- Componentização com React
-- Otimização de imagens com Next.js
-- Cases organizados por estrutura de dados
-- Performance otimizada
+### FitAI
 
-## 📸 Projetos apresentados
+A workout management application featuring CRUD operations, a responsive interface, and REST API integration with a Node.js backend and PostgreSQL database.
 
-- Coach Brasil
-- Shop2Gether
-- Wake
+## 📱 Features
 
-## 🎨 Design
+- Responsive layout for desktop and mobile devices
+- Interactive GitHub contribution activity
+- Embedded ChimoBoard game
+- Project showcase with technology tags and repository links
+- Custom illustrations and visual assets
+- Contact and social media links
+- Downloadable resume
 
-Todo o layout foi desenvolvido no Figma antes da implementação em código.
+## 🚀 Tech Stack
 
-## 👋 Contato
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-%23000.svg?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-%234B3263.svg?style=for-the-badge&logo=eslint&logoColor=white)
+![Prettier](https://img.shields.io/badge/prettier-%23F7B93E.svg?style=for-the-badge&logo=prettier&logoColor=black)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![PNPM](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-LinkedIn: https://www.linkedin.com/in/ana-siqueira-247940125/
+## ⚙️ Getting Started
 
-GitHub: https://github.com/itsmesiq
+### Prerequisites
 
-Email: anasiqueira.serpentis@gmail.com
+- Node.js
+- pnpm
 
-## ⚙️ Como executar
+### Installation
 
-Clone o repositório:
+Clone the repository:
 
 ```bash
 git clone https://github.com/itsmesiq/portfolio.git
-```
-
-Entre na pasta:
-
-```bash
 cd portfolio
 ```
 
-Instale as dependências:
+Install dependencies:
 
 ```bash
 pnpm install
 ```
 
-Execute o projeto:
+Start the development server:
 
 ```bash
 pnpm dev
 ```
 
-Abra:
+Open http://localhost:3000 in your browser.
 
+### Available Scripts
+
+```bash
+pnpm dev       # Start development server
+pnpm build     # Create production build
+pnpm start     # Start production server
+pnpm lint      # Run ESLint
+pnpm format    # Format code with Prettier
 ```
-http://localhost:3000
-```
 
-## 📄 Licença
+## Deployment
 
-Este projeto foi desenvolvido para fins de portfólio.
+The portfolio is deployed on Vercel, with automatic deployment configured through GitHub.
+
+## 👋 Contact
+
+LinkedIn: https://www.linkedin.com/in/itsmesiq/
+
+GitHub: https://github.com/itsmesiq
+
+Email: anasiqueira.serpentis@gmail.com
+
+---
+
+<br>
+Built with curiosity, creativity, and code.
+
+© 2026 Ana Siqueira. All rights reserved.
