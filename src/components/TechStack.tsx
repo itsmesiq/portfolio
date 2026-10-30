@@ -5,15 +5,15 @@ const techStack = [
     'Next.js',
     'Node.js',
     'PostgreSQL',
-    'DrizzleORM',
+    'Drizzle ORM',
     'Fastify',
     'REST APIs',
     'Jest',
     'Git',
     'HTML5',
     'CSS3',
-    'TailwindCSS',
-    'SASS',
+    'Tailwind CSS',
+    'Sass',
 ];
 
 export function TechStack() {
