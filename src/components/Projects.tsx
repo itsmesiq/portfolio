@@ -21,6 +21,7 @@ export function Projects() {
                                 alt={project.title}
                                 width={784}
                                 height={407}
+                                sizes="(max-width: 640px) 330px, 784px"
                                 className="h-auto w-full rounded-3xl"
                             />
                         ) : (

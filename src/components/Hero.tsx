@@ -101,6 +101,7 @@ export function Hero() {
                     height={254}
                     className="aspect-square max-w-[140px] rounded-3xl sm:row-span-2 sm:max-w-[200px] md:row-span-3 md:row-start-1 md:max-w-none lg:col-span-2 lg:row-span-1 lg:row-start-2 lg:max-w-[180px] xl:col-span-1 xl:row-span-3 xl:row-start-1 xl:max-w-none"
                     priority
+                    fetchPriority="high"
                 />
             </div>
 
