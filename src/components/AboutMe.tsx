@@ -2,7 +2,10 @@ import Image from 'next/image';
 
 export function AboutMe() {
     return (
-        <section className="grid w-full max-w-[1366px] grid-cols-1 gap-8 font-sans xl:grid-cols-[minmax(0,1fr)_auto]">
+        <section
+            id="about-me"
+            className="grid w-full max-w-[1366px] grid-cols-1 gap-8 font-sans xl:grid-cols-[minmax(0,1fr)_auto]"
+        >
             <div className="relative flex w-full min-w-0 flex-col items-end gap-10 rounded-3xl border border-stroke bg-surface px-3 py-8 sm:px-8 xl:px-6 2xl:px-10">
                 <div className="about-me w-full min-w-0 px-5 sm:max-w-[248px] sm:px-0 md:max-w-[280px] lg:max-w-[332px] xl:max-w-[224px] 2xl:max-w-[380px]">
                     <h2 className="mb-4 text-3xl font-medium text-foreground">About Me</h2>

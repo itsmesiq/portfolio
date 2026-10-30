@@ -1,10 +1,12 @@
+import Link from 'next/link';
+
 export function Navigation() {
     const navItems = [
-        { name: 'Hello', href: 'hello' },
-        { name: 'Projects', href: 'projects' },
-        { name: 'Tech Stack', href: 'tech-stack' },
-        { name: 'About Me', href: 'about' },
-        { name: 'Contact', href: 'contact' },
+        { name: 'Hello', href: '/#hello' },
+        { name: 'Projects', href: '/#projects' },
+        { name: 'Tech Stack', href: '/#tech-stack' },
+        { name: 'About Me', href: '/#about-me' },
+        { name: 'Contact', href: '/#contact' },
     ];
 
     return (
@@ -15,9 +17,9 @@ export function Navigation() {
                         key={item.name}
                         className="rounded-full bg-transparent px-1.5 py-3 transition-colors duration-300 ease-in-out hover:text-accent"
                     >
-                        <a href={item.href} className="rotate-180 [writing-mode:vertical-rl]">
+                        <Link href={item.href} className="rotate-180 [writing-mode:vertical-rl]">
                             {item.name}
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>

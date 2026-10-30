@@ -5,7 +5,10 @@ import { projects } from '@/data/projects';
 
 export function Projects() {
     return (
-        <section className="grid w-full max-w-[1366px] grid-cols-1 gap-4 font-sans md:grid-cols-[auto_auto] md:gap-8 lg:auto-rows-auto lg:grid-cols-[minmax(0,1fr)_auto]">
+        <section
+            id="projects"
+            className="grid w-full max-w-[1366px] grid-cols-1 gap-4 font-sans md:grid-cols-[auto_auto] md:gap-8 lg:auto-rows-auto lg:grid-cols-[minmax(0,1fr)_auto]"
+        >
             {projects.map((project, index) => (
                 <div
                     key={index}
