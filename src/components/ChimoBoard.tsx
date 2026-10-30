@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 const CHIMOBOARD_URL = 'https://chimoboard.vercel.app/?mode=embed';
 
 export function ChimoBoard() {
-    const [height, setHeight] = useState(640);
+    const [height, setHeight] = useState(464);
     const iframeRef = useRef<HTMLIFrameElement>(null);
 
     useEffect(() => {
