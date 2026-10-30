@@ -30,17 +30,17 @@ export function ChimoBoard() {
     const chimoInstructions = [
         {
             id: 1,
-            text: '1 Chimo por cor',
+            text: '1 Chimo per color',
             type: 'region',
         },
         {
             id: 2,
-            text: '1 Chimo por linha e coluna',
+            text: '1 Chimo per row and column',
             type: 'line',
         },
         {
             id: 3,
-            text: 'Chimos não se tocam',
+            text: 'Chimos cannot touch',
             type: 'adjacency',
         },
     ];
